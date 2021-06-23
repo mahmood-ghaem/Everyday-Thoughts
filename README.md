@@ -71,6 +71,14 @@ A project created with JavaScript
 - [Source](https://github.com/mahmood-ghaem/Node.js-Express-CrashCourse)
 - [Reference](https://www.youtube.com/watch?v=L72fhGm1tfE)
 
+### 4- Node.js Express API
+- [Source](https://github.com/mahmood-ghaem/Node.js_Express_API)
+- [Reference](https://www.youtube.com/watch?v=l8WPWK9mS5M)
+
+### 5- Node.js Blog
+- [Demo](https://hyf-blog.herokuapp.com/)
+- [Source](https://github.com/mahmood-ghaem/hyf-blog)
+
 <h2 align="center">March 2021</h2>
 
 ### 1- HTML-CSS Tips & Tricks
