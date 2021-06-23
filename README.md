@@ -7,13 +7,21 @@ On this page, I will post the topics I deal with and work on them as a developer
 
 ### Globalization and Localization in ASP.NET Core
 
-<p>I'm trying to learn how to create a multilingual web application?</p>
+I'm trying to learn how to create a multilingual web application?
 
 - https://github.com/onodera-sf/AspNetCoreLocalizationDataAnnotation
 - https://docs.microsoft.com/en-us/graph/tutorials/aspnet-core
 - https://github.com/cnahmetcn/corecrud
 
-### Add event in Outlook calander from ASP.NET app.
+### Add event in Outlook calander from ASP.NET app
+
+### Create ASP.NET Core API and React.js
+
+There is a very good tutorial here:
+
+- https://www.youtube.com/watch?v=i8LymADs_U4
+- https://www.youtube.com/watch?v=z5NsNtrl4Og
+- https://github.com/CodAffection/React-js-Master-Detail-CRUD-with-Asp.Net-Web-API
 
 ## June 2021
 
