@@ -1,12 +1,14 @@
 # What I'm thinking about right now?
 
+On this page, I will post the topics I deal with and work on them, daily as a developer and administrator of office automation.
+
 ## June 2021
 
 ### Create WordPress Plugin
 
 - [How to Create Your First WordPress Plugin](https://www.dreamhost.com/blog/how-to-create-your-first-wordpress-plugin)
 
-### Access Asp .Net to WordPress Database
+#### Access Asp .Net to WordPress Database
 
 ### Relational lists in sharepoint
 
