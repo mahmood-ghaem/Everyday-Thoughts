@@ -20,7 +20,7 @@ On this page, I will post the topics I deal with and work on them as a developer
 ### Change DNS recodrs for a domain to resolve it to another hosting
 
 
-## May 2021
+<h2 align="center">May 2021</h2>
 
 ### Globalization and Localization in ASP.NET Core
 
@@ -49,7 +49,7 @@ There is a very good tutorial here:
 Get log from all activity of each user and save in database with IP address
 
 
-## April 2021
+<h2 align="center">April 2021</h2>
 
 ### JavaScript Quiz
 A project created with JavaScript
