@@ -34,6 +34,10 @@ I'm trying to learn how to create a multilingual web application?
 
 ### 3- Create ASP.NET Core API and React.js
 
+### 4- HYF Node.js Test
+An exam about Node.js module
+- [Repository](https://github.com/mahmood-ghaem/HYF-Node.js-Test)
+
 There is a very good tutorial here:
 
 - https://www.youtube.com/watch?v=i8LymADs_U4
@@ -92,6 +96,10 @@ A project created with JavaScript
 
 ### 1- JavaScrip CodePieces
 - [Repository](https://github.com/mahmood-ghaem/JavaScrip-CodePieces)
+
+### 2- using-apis-test-got
+An exam about using API module
+- [Repository](https://github.com/mahmood-ghaem/using-apis-test-got)
 
 <h2 align="center">January 2021</h2>
 
