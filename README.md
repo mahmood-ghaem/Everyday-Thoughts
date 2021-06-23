@@ -84,16 +84,18 @@ A project created with JavaScript
 ### 1- HTML-CSS Tips & Tricks
 - [Repository](https://github.com/mahmood-ghaem/HTML-CSS-TipsAndTricks)
 
-### 2- JavaScrip CodePieces
-- [Repository](https://github.com/mahmood-ghaem/JavaScrip-CodePieces)
+
 
 
 
 <h2 align="center">February 2021</h2>
 
+### 1- JavaScrip CodePieces
+- [Repository](https://github.com/mahmood-ghaem/JavaScrip-CodePieces)
 
 <h2 align="center">January 2021</h2>
 
-### HTML-CSS Homework of HackYourFuture
-
+### 1- HTML-CSS Homework of HackYourFuture
 - [All 3 weeks](https://mahmood-ghaem.github.io/HYF-Module-HTMLCSSGIT)
+
+
