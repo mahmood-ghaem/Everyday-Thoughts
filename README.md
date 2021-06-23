@@ -1,6 +1,6 @@
 # What I'm thinking about right now?
 
-On this page, I will post the topics I deal with and work on them, daily as a developer and administrator of office automation.
+On this page, I will post the topics I deal with and work on them as a developer and administrator of office automation.
 
 ## June 2021
 
