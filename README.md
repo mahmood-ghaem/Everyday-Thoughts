@@ -48,6 +48,9 @@ There is a very good tutorial here:
 
 Get log from all activity of each user and save in database with IP address
 
+### UBL(Universal Business Language) in ASP.NET Core
+- https://github.com/UblSharp/UblSharp
+- https://en.wikipedia.org/wiki/Universal_Business_Language
 
 <h2 align="center">April 2021</h2>
 
