@@ -24,8 +24,8 @@ There is a very good tutorial here:
 - https://github.com/CodAffection/React-js-Master-Detail-CRUD-with-Asp.Net-Web-API
 
 ### Create GitHub API React.js
- [Demo](https://github-react-project.herokuapp.com)
- [Source](https://github.com/mahmood-ghaem/GitHub-React)
+ - [Demo](https://github-react-project.herokuapp.com)
+ - [Source](https://github.com/mahmood-ghaem/GitHub-React)
 
 ## June 2021
 
