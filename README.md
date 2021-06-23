@@ -96,4 +96,4 @@ A project created with JavaScript
 
 ### HTML-CSS Homework of HackYourFuture
 
-- [Demo](https://mahmood-ghaem.github.io/HYF-Module-HTMLCSSGIT)
+- [All 3 weeks](https://mahmood-ghaem.github.io/HYF-Module-HTMLCSSGIT)
