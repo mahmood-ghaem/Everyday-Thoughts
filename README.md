@@ -100,6 +100,7 @@ A project created with JavaScript
 <!------------------------------------------------------------------------------February------------------------------------------------------------------------------>
 
 ### 1- JavaScrip CodePieces
+I put everything I have learned about JavaScript in this repository.
 - [Repository](https://github.com/mahmood-ghaem/JavaScrip-CodePieces)
 
 ### 2- using-apis-test-got
