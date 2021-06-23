@@ -14,5 +14,7 @@
 
 ### Automate task in sharepoint, Add event to outlook calander related sharepoint list task
 
+### Change DNS recodrs for a domain to resolve it to another hosting
+
 ###
 
