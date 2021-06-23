@@ -1,4 +1,4 @@
-# Everyday-Thoughts
+# What I'm thinking about right now?
 
 ## June 2021
 
