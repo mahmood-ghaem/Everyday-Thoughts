@@ -6,7 +6,7 @@ On this page, I will post the topics I deal with and work on them as a developer
 ## May 2021
 
 #### Globalization and Localization in ASP.NET Core
-I'm trying to learn how to create a multilingual web application?
+<p>I'm trying to learn how to create a multilingual web application?</p>
 
 #### Add event in Outlook calander from ASP.NET app.
 
