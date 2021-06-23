@@ -6,7 +6,9 @@ On this page, I will post the topics I deal with and work on them as a developer
 ## May 2021
 
 ### Globalization and Localization in ASP.NET Core
+
 <p>I'm trying to learn how to create a multilingual web application?</p>
+
 - https://github.com/onodera-sf/AspNetCoreLocalizationDataAnnotation
 - https://docs.microsoft.com/en-us/graph/tutorials/aspnet-core
 - https://github.com/cnahmetcn/corecrud
