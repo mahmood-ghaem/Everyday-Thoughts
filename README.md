@@ -27,6 +27,10 @@ There is a very good tutorial here:
  - [Demo](https://github-react-project.herokuapp.com)
  - [Source](https://github.com/mahmood-ghaem/GitHub-React)
 
+### ASP.NET Core Logger
+
+Get log from all activity of each user and save in database with IP address
+
 ## June 2021
 
 ### Create WordPress Plugin
