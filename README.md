@@ -1,4 +1,4 @@
-# What I'm thinking about right now?
+# What am I thinking about at the moment?
 
 On this page, I will post the topics I deal with and work on them as a developer and administrator of office automation.
 
