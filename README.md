@@ -28,6 +28,9 @@ This is final HYF project.
 - [Demo](https://mahmood-ghaem.github.io/Bazar-HYF-Project/index.html)
 - [Source](https://github.com/mahmood-ghaem/Bazar-HYF-Project)
 
+### 9- How to debug IIS hosted asp.net web application in visual studio?
+There are a lot of contents in internet for this question but I went ahead with this article and it worked well, contrary to Microsoft's confusing tutorials 😉
+- [Article](./Data/How to debug IIS hosted asp.net web application in visual studio.pdf)
 
 <h2 align="center">May 2021</h2>
 <!------------------------------------------------------------------------------May------------------------------------------------------------------------------>
