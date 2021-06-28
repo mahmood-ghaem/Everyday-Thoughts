@@ -32,6 +32,10 @@ This is final HYF project.
 There are a lot of contents in internet for this question but I went ahead with this article and it worked well, contrary to Microsoft's confusing tutorials 😉
 - <a href="./Data/How to debug IIS hosted asp.net web application in visual studio.pdf" target="_blank">Article</a>
 
+### 10- 5 hours debuging just for one mistake 🤦‍♂️
+- My new web application doesn't have web.config so in deployment startup.cs couldn't access appsettings.Development.json file and my project couldn't sent confirmation email after user registration.
+- To create web.config automatically --> right click on project in sulotion explorer --> click properties --> in build tab just made some change to web.config will be create (I don't know what exactly I did.)
+
 <h2 align="center">May 2021</h2>
 <!------------------------------------------------------------------------------May------------------------------------------------------------------------------>
 
