@@ -30,8 +30,7 @@ This is final HYF project.
 
 ### 9- How to debug IIS hosted asp.net web application in visual studio?
 There are a lot of contents in internet for this question but I went ahead with this article and it worked well, contrary to Microsoft's confusing tutorials 😉
-- [Article]()
-<a href="./Data/How to debug IIS hosted asp.net web application in visual studio.pdf">Article</a>
+- <a href="./Data/How to debug IIS hosted asp.net web application in visual studio.pdf" target="_blank">Article</a>
 
 <h2 align="center">May 2021</h2>
 <!------------------------------------------------------------------------------May------------------------------------------------------------------------------>
