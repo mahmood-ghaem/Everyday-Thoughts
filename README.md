@@ -2,6 +2,13 @@
 
 On this page, I will post the topics I deal with and work on them as a developer and administrator of office automation.
 
+<h2 align="center">July 2021</h2>
+<!------------------------------------------------------------------------------July------------------------------------------------------------------------------>
+
+### 1- Research about Microsoft Dynamic ATS (Applicant Tracking System)
+
+- [How to manage open jobs in Dynamics 365](https://www.youtube.com/watch?v=K988bQ1WcRM)
+
 
 <h2 align="center">June 2021</h2>
 <!------------------------------------------------------------------------------June------------------------------------------------------------------------------>
