@@ -10,6 +10,8 @@ On this page, I will post the topics I deal with and work on them as a developer
 
 ### 2- WP ERP Pro
 - [Installing WP ERP Pro on a WordPress web site](https://wperp.com/)
+- [HR Frontend](https://wperp.com/14369/introducing-all-new-wordpress-hr-frontend/)
+- [First using ERP Software](https://wperp.com/87054/how-to-use-erp-software-in-your-business/)
 
 ### 3- Work on WordPress Administration
 - [Recover a WordPress web site (deactivate all plugins)](https://wordpress.org/support/article/faq-troubleshooting/)
