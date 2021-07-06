@@ -6,8 +6,14 @@ On this page, I will post the topics I deal with and work on them as a developer
 <!------------------------------------------------------------------------------July------------------------------------------------------------------------------>
 
 ### 1- Research about Microsoft Dynamic ATS (Applicant Tracking System)
-
 - [How to manage open jobs in Dynamics 365](https://www.youtube.com/watch?v=K988bQ1WcRM)
+
+### 2- WP ERP Pro
+- [Installing WP ERP Pro on a WordPress web site](https://wperp.com/)
+
+### 3- Work on WordPress Administration
+- [Recover a WordPress web site](https://wordpress.org/support/article/faq-troubleshooting/)
+- [Research about WordPress Database and Tables](https://wp-staging.com/docs/the-wordpress-database-structure/)
 
 
 <h2 align="center">June 2021</h2>
