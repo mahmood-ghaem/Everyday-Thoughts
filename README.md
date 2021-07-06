@@ -52,6 +52,7 @@ There are a lot of contents in internet for this question but I went ahead with 
 - To create web.config automatically --> right click on project in sulotion explorer --> click properties --> in build tab just make some changes to web.config will be create (I don't know what exactly I did.)
 
 ### 11- Learn to work with [Figma](https://www.figma.com)
+- I prefered Adobe XD
 
 <h2 align="center">May 2021</h2>
 <!------------------------------------------------------------------------------May------------------------------------------------------------------------------>
