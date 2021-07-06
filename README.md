@@ -12,7 +12,7 @@ On this page, I will post the topics I deal with and work on them as a developer
 - [Installing WP ERP Pro on a WordPress web site](https://wperp.com/)
 
 ### 3- Work on WordPress Administration
-- [Recover a WordPress web site](https://wordpress.org/support/article/faq-troubleshooting/)
+- [Recover a WordPress web site (deactivate all plugins)](https://wordpress.org/support/article/faq-troubleshooting/)
 - [Research about WordPress Database and Tables](https://wp-staging.com/docs/the-wordpress-database-structure/)
 
 
