@@ -12,11 +12,22 @@ On this page, I will post the topics I deal with and work on them as a developer
 - [Installing WP ERP Pro on a WordPress web site](https://wperp.com/)
 - [HR Frontend](https://wperp.com/14369/introducing-all-new-wordpress-hr-frontend/)
 - [First using ERP Software](https://wperp.com/87054/how-to-use-erp-software-in-your-business/)
+- [Payroll](https://wperp.com/docs/accounting-add-ons/payroll/)
+- [Recruitment](https://wperp.com/docs/hrm-add-ons/recruitment/)
 
 ### 3- Work on WordPress Administration
 - [Recover a WordPress web site (deactivate all plugins)](https://wordpress.org/support/article/faq-troubleshooting/)
 - [Research about WordPress Database and Tables](https://wp-staging.com/docs/the-wordpress-database-structure/)
 
+### 4- Email marketing with weMail WordPress plugin
+- Instalation and configuration
+- Administration
+- Create Campaigns to send email to users
+- Create template email
+
+### 5- SharePoint
+- Administration
+- Create and manage web pages
 
 <h2 align="center">June 2021</h2>
 <!------------------------------------------------------------------------------June------------------------------------------------------------------------------>
