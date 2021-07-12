@@ -29,6 +29,8 @@ On this page, I will post the topics I deal with and work on them as a developer
 - Administration
 - Create and manage web pages
 
+### 6- Styling React.js with WebPack
+
 <h2 align="center">June 2021</h2>
 <!------------------------------------------------------------------------------June------------------------------------------------------------------------------>
 
