@@ -33,6 +33,7 @@ On this page, I will post the topics I deal with and work on them as a developer
 
 ### 7- ASP.NET Core fetch data from an API
 - [Deserialize json to IEnumerable](https://stackoverflow.com/questions/51359062/deserialize-json-to-ienumerable-in-c-sharp-asp-net-core)
+- [Getting Jobs from WP-ERP API](https://wperp.com/docs/hrm-add-ons/recruitment/#global-api)
 
 <h2 align="center">June 2021</h2>
 <!------------------------------------------------------------------------------June------------------------------------------------------------------------------>
