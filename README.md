@@ -35,6 +35,9 @@ On this page, I will post the topics I deal with and work on them as a developer
 - [Deserialize json to IEnumerable](https://stackoverflow.com/questions/51359062/deserialize-json-to-ienumerable-in-c-sharp-asp-net-core)
 - [Getting data from WP-ERP API](https://wperp.com/docs/hrm-add-ons/recruitment/#global-api)
 
+### 8- Custome theme for WordPress
+- [Learning document in Persian language](https://hamyarwp.com/wordpress-theme-development/?__cf_chl_jschl_tk__=cb3061d41af81f2d0688aef7ea0ca6f1e8f9008f-1626256148-0-AfzmH54fzWDrq3exN16hVZwA6yqDzkrV0QBv9nkzhiZeX7KWksBT_e_ijAb4apvzkwCs8NquQDmSr3ItFY6mVdrZpwGvJ1rGt_kE1TB9GTLjhFOklN7GalUAg0bhzswxUaDii2Shs6z_gMrw4YmkZ__8Bw_mQGQSc16_Xu1IBZvGSfpTOuunktCdwRyCrOd5N6MpscMUfvNZCluls_EPchx6SNULoUffNjpNkfedI8xoNSZfjIZ2cAUZPMgY4eRd678V3Hxcxyoih8y34YXp5nueZdgztbw4pAYDyVAYxJ2pZpWkEqfRgnBxQGvU1qp4dY0OtPYQOoR1gGqUQGSBQFNfCUXlp653Yglkp_P6wbFAyAsvVn3-SPkfXwMb9DTkAm2DMsfnpa85GWH4tiNPAYxWBi1yAE7u2ZgISDXqTZow8ccBbMqZp0r9qYD_6AmdPKkjUh_MUEg9mJP72z3d4l41M6KTSUrbVKLdbC25p0FekHCWAypwXiJ_oMf7Zh0E0A)
+
 <h2 align="center">June 2021</h2>
 <!------------------------------------------------------------------------------June------------------------------------------------------------------------------>
 
