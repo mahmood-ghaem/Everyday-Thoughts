@@ -46,6 +46,10 @@ On this page, I will post the topics I deal with and work on them as a developer
 - [Drop-in tutorial: Node.js + Express](https://www.youtube.com/watch?v=C2hdSa3QJIk)
 - [Adyen Docs](https://docs.adyen.com/development-resources/api-credentials#generate-your-api-key)
 
+### 11- WordPress Plugin
+- [Basic example of wordpress plugin to CRUD](https://github.com/eduardoarandah/wordpress-crud-example)
+- [Learn how to create WordPress Plug-in](https://darkoobweb.com/wordpress-plugin-learning/)
+
 <h2 align="center">June 2021</h2>
 <!------------------------------------------------------------------------------June------------------------------------------------------------------------------>
 
