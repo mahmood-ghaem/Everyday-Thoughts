@@ -50,6 +50,30 @@ On this page, I will post the topics I deal with and work on them as a developer
 - [Basic example of wordpress plugin to CRUD](https://github.com/eduardoarandah/wordpress-crud-example)
 - [Learn how to create WordPress Plug-in](https://darkoobweb.com/wordpress-plugin-learning/)
 
+### 12- Pass props to another component onclick of a button in React.js
+```javascript
+import React from 'react';
+import { useHistory } from 'react-router-dom';
+function Component({ product }) {
+  const history = useHistory();
+  const handlerButton = () =>
+    history.push({
+      pathname: '/yourRoute',
+      state: your object you want to send,
+    });
+  return (
+    <div>
+     <Button onClick={handlerButton}>Button Text</Button>
+    </div>
+  );
+}
+export default Component;
+```
+
+### 13- Transfer WordPress site to another hosting
+- [Move your WordPress site to another domain](https://help.one.com/hc/en-us/articles/115005585969-Move-your-WordPress-site-to-another-domain#step-6)
+- [Changing The WordPress URL](https://wordpress.org/support/article/changing-the-site-url/)
+
 <h2 align="center">June 2021</h2>
 <!------------------------------------------------------------------------------June------------------------------------------------------------------------------>
 
