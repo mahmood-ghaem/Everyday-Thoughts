@@ -74,6 +74,36 @@ export default Component;
 - [Move your WordPress site to another domain](https://help.one.com/hc/en-us/articles/115005585969-Move-your-WordPress-site-to-another-domain#step-6)
 - [Changing The WordPress URL](https://wordpress.org/support/article/changing-the-site-url/)
 
+### 14- How to get JSON from API in JavaScript?
+- [Reference](https://stackoverflow.com/questions/12460378/how-to-get-json-from-url-in-javascript)
+
+```javascript
+var getJSON = function(url, callback) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', url, true);
+    xhr.responseType = 'json';
+    xhr.onload = function() {
+      var status = xhr.status;
+      if (status === 200) {
+        callback(null, xhr.response);
+      } else {
+        callback(status, xhr.response);
+      }
+    };
+    xhr.send();
+};
+
+
+getJSON('your API link',
+function(err, data) {
+  if (err !== null) {
+    alert('Something went wrong: ' + err);
+  } else {
+    alert('Your query count: ' + data.query.count);
+  }
+});
+```
+
 <h2 align="center">June 2021</h2>
 <!------------------------------------------------------------------------------June------------------------------------------------------------------------------>
 
