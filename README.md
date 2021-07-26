@@ -103,6 +103,10 @@ function(err, data) {
   }
 });
 ```
+### 15- OpenStreetMap
+- [Creating A Map With Markers](https://mediarealm.com.au/articles/openstreetmap-openlayers-map-markers)
+- [Nominatim Wiki](https://wiki.openstreetmap.org/wiki/Nominatim#API)
+- [Nominatim Doc](http://nominatim.org/release-docs/latest/)
 
 <h2 align="center">June 2021</h2>
 <!------------------------------------------------------------------------------June------------------------------------------------------------------------------>
