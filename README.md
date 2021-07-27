@@ -103,6 +103,18 @@ function(err, data) {
   }
 });
 ```
+Another way:
+```javascript
+const firstFunc = async () => {
+  const response = await fetch(apiUrl);
+  const myJson = await response.json(); //extract JSON from the http response
+  return myJson;
+};
+
+firstFunc().then((data) => { // data will be set by myJson
+   secondFunc(data);
+});
+```
 ### 15- OpenStreetMap
 - [Creating A Map With Markers](https://mediarealm.com.au/articles/openstreetmap-openlayers-map-markers)
 - [Nominatim Wiki](https://wiki.openstreetmap.org/wiki/Nominatim#API)
