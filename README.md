@@ -2,6 +2,22 @@
 
 On this page, I will post the topics I deal with and work on them as a developer and administrator of office automation.
 
+
+<h2 align="center">August 2021</h2>
+<!-----------------------------------------------------------------------------August----------------------------------------------------------------------------->
+
+### 1- Work on the graduation project of HackyourFuture.net
+
+### 2- Deploy MERN web application to Heroku
+- Increase heap memory from Heroku hosting for JavaScript 
+
+### 3- Change user subscription in office 365 administration
+- point: When you buy new subscription in Office 365 administrator panel and asign it to a user just wait 30 minuts to activate user outlook and all the things, instead do a lot and even call Microsoft support like me 😅.
+
+
+
+
+
 <h2 align="center">July 2021</h2>
 <!------------------------------------------------------------------------------July------------------------------------------------------------------------------>
 
