@@ -45,9 +45,9 @@ namespace Models
     }
 }
 ```
-- IRepository/IBlogCategoryRepository.cs
+- DataAccess/IRepository/IBlogCategoryRepository.cs
 ```c#
-namespace IRepository
+namespace DataAccess.IRepository
 {
 
     public interface IBlogCategoryRepository : IRepository<BlogCategory>
@@ -60,9 +60,9 @@ namespace IRepository
     }
 }
 ```
-- IRepository/IRepository.cs
+- DataAccess/IRepository/IRepository.cs
 ```c#
-namespace IRepository
+namespace DataAccess.IRepository
 {
     public interface IRepository<T> where T : class
     {
@@ -82,9 +82,9 @@ namespace IRepository
     }
 }
 ```
-- IRepository/UnitOfWork.cs
+- DataAccess/IRepository/UnitOfWork.cs
 ```c#
-namespace IRepository
+namespace DataAccess.IRepository
 {
     public interface IUnitOfWork: IDisposable
     {
@@ -94,9 +94,9 @@ namespace IRepository
     }
 }
 ```
-- Repository/BlogCategoryRepository.cs
+- DataAccess/Repository/BlogCategoryRepository.cs
 ```c#
-namespace Repository
+namespace DataAccess.Repository
 {
     public class BlogCategoryRepository : Repository<BlogCategory>, IBlogCategoryRepository
     {
@@ -134,9 +134,9 @@ namespace Repository
     }
 }
 ```
-- Repository/Repository.cs
+- DataAccess/Repository/Repository.cs
 ```c#
-namespace Repository
+namespace DataAccess.Repository
 {
     public class Repository<T> : IRepository<T> where T : class
     {
@@ -159,7 +159,10 @@ namespace Repository
             return dbset.Find(id);
         }
 
-        public IEnumerable<T> GetAll(Expression<Func<T, bool>> filter = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderby = null, string includeProperties = null)
+        public IEnumerable<T> GetAll(Expression<Func<T, bool>> filter = null, 
+                                     Func<IQueryable<T>, 
+                                     IOrderedQueryable<T>> orderby = null, 
+                                     string includeProperties = null)
         {
             IQueryable<T> query = dbset;
             if (filter != null)
@@ -181,7 +184,8 @@ namespace Repository
             return query.ToList();
         }
 
-        public T GetFirstOrDefault(Expression<Func<T, bool>> filter = null, string includeProperties = null)
+        public T GetFirstOrDefault(Expression<Func<T, bool>> filter = null, 
+                                   string includeProperties = null)
         {
             IQueryable<T> query = dbset;
             if (filter != null)
@@ -236,9 +240,9 @@ namespace Repository
     }
 }
 ```
-- Repository/UnitOfWork.cs
+- DataAccess/Repository/UnitOfWork.cs
 ```c#
-namespace Repository
+namespace DataAccess.Repository
 {
     public class UnitOfWork : IUnitOfWork
     {
@@ -264,11 +268,11 @@ namespace Repository
     }
 }
 ```
-- ApplicationDbContext.cs
+- DataAccess/ApplicationDbContext.cs
 ```c#
 
 ```
-- ResultModel.cs
+- DataAccess/ResultModel.cs
 ```c#
 
 ```
