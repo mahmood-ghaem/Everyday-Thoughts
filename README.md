@@ -376,6 +376,88 @@ namespace Models
     }
 }
 ```
+- Controllers/BlogCategoryController.cs
+```c#
+namespace Controllers
+{
+    public class BlogCategoryController : Controller
+    {
+        private readonly IUnitOfWork _unitOfWork;
+        public BlogCategoryController(IUnitOfWork unitOfWork)
+        {
+            _unitOfWork = unitOfWork;
+        }
+
+        public IActionResult Index()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult GetAllRecords()
+        {
+            return Json(new { data = _unitOfWork.BlogCategory.GetAll(w => w.Activity != null) });
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Delete(int id)
+        {
+            _unitOfWork.BlogCategory.Remove(id);
+            _unitOfWork.Save();
+            return Json(new { success = true, message = "Delete successful." });
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult ChangeActivity(int id, bool? status)
+        {
+            _unitOfWork.BlogCategory.UpdateActivity(id, status);
+            if (status != null)
+            {
+                return Json(new { success = true, message = "Activity of record " + id + " changed to : " + status + "." });
+            }
+            else
+            {
+                return Json(new { success = true, message = "Record " + id + " deleted." });
+            }
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Upsert(string caption, string description, int? id)
+        {
+            BlogCategory blogCategory = new BlogCategory
+            {
+                Activity = false,
+                Caption = caption,
+                Description = description,
+                Id = id ?? 0
+            };
+            if (ModelState.IsValid)
+            {
+                if (blogCategory.Id == 0)
+                {
+                    _unitOfWork.BlogCategory.Add(blogCategory);
+                    _unitOfWork.Save();
+                    return Json(new { success = true, message = "Insert succeed", status = "insert" });
+                }
+                else
+                {
+                    _unitOfWork.BlogCategory.Update(blogCategory);
+                    _unitOfWork.Save();
+                    return Json(new { success = true, message = "Update succeed", status = "update" });
+                }
+            }
+            else
+            {
+                return Json(new { success = false, message = "Form is not valid, Please enter data correctly.", status = "nothing" });
+            }
+        }
+
+    }
+}
+```
 
 <h2 align="center">July 2021</h2>
 <!------------------------------------------------------------------------------July------------------------------------------------------------------------------>
