@@ -16,7 +16,13 @@ On this page, I will post the topics I deal with and work on them as a developer
 
 ### 4- ASP .NET Core Unit Of Work Repository Pattern:
 I use this pattern in all .NET projects, it is very efficient and optimal.
+Using the code page, you can create the following files and implement your project with this pattern.
+I gave an example for an entity(BlogCategory) and you can create other entities in the same way.
+
+Good Luck 👍
+
 [View code page](https://github.com/mahmood-ghaem/Everyday-Thoughts/blob/main/UnitOfWork.md)
+
 - Models/BlogCategory.cs
 - DataAccess/IRepository/IBlogCategoryRepository.cs
 - DataAccess/IRepository/IRepository.cs
