@@ -15,23 +15,16 @@ On this page, I will post the topics I deal with and work on them as a developer
 - point: When you buy new subscription in Office 365 administrator panel and asign it to a user just wait 30 minuts to activate user outlook and all the things, instead do a lot and even call Microsoft support like me 😅.
 
 ### 4- ASP .NET Core Unit Of Work Repository Pattern:
-- BlogCategory.cs
+- Models/BlogCategory.cs
 ```c#
-      public BlogCategory()
+namespace Models
+{
+    public partial class BlogCategory
+    {
+        public BlogCategory()
         {
-            Blogs = new HashSet<Blog>();
+
         }
-
-        //public decimal Id { get; set; }
-        //public string Caption { get; set; }
-        //public string Description { get; set; }
-        //public bool? Activity { get; set; }
-
-        public virtual ICollection<Blog> Blogs { get; set; }
-        
-        
-        
-
 
         [Key]
         public int Id { get; set; }
@@ -50,6 +43,234 @@ On this page, I will post the topics I deal with and work on them as a developer
         [Display(Name = "Activity Status")]
         public bool? Activity { get; set; }
     }
+}
+```
+- IRepository/IBlogCategoryRepository.cs
+```c#
+namespace IRepository
+{
+
+    public interface IBlogCategoryRepository : IRepository<BlogCategory>
+    {
+        IEnumerable<SelectListItem> GetBlogCategoryListForDropDown();
+
+        void Update(BlogCategory blogCategory);
+
+        void UpdateActivity(int id, bool? status);
+    }
+}
+```
+- IRepository/IRepository.cs
+```c#
+namespace IRepository
+{
+    public interface IRepository<T> where T : class
+    {
+        T Get(int id);
+        IEnumerable<T> GetAll(
+            Expression<Func<T, bool>> filter = null,
+            Func<IQueryable<T>, IOrderedQueryable<T>> orderby = null,
+            string includeProperties = null
+            );
+        T GetFirstOrDefault(
+            Expression<Func<T, bool>> filter = null,
+            string includeProperties = null
+            );
+        void Add(T entity);
+        ResultModel Remove(int id);
+        ResultModel Remove(T entity);
+    }
+}
+```
+- IRepository/UnitOfWork.cs
+```c#
+namespace IRepository
+{
+    public interface IUnitOfWork: IDisposable
+    {
+        IBlogCategoryRepository BlogCategory { get; }
+
+        void Save();
+    }
+}
+```
+- Repository/BlogCategoryRepository.cs
+```c#
+namespace Repository
+{
+    public class BlogCategoryRepository : Repository<BlogCategory>, IBlogCategoryRepository
+    {
+        private readonly ApplicationDbContext _context;
+        public BlogCategoryRepository(ApplicationDbContext context) : base(context)
+        {
+            _context = context;
+        }
+
+        public IEnumerable<SelectListItem> GetBlogCategoryListForDropDown()
+        {
+            return _context.BlogCategory.Select(i => new SelectListItem()
+            {
+                Text = i.Caption,
+                Value = i.Id.ToString()
+            });
+        }
+
+        public void Update(BlogCategory blogCategory)
+        {
+            var objFromDB = _context.BlogCategory.FirstOrDefault(s => s.Id == blogCategory.Id);
+            objFromDB.Caption = blogCategory.Caption;
+            objFromDB.Description = blogCategory.Description;
+
+            _context.SaveChanges();
+        }
+
+        public void UpdateActivity(int id, bool? status)
+        {
+            var blogCategoryFromDB = _context.BlogCategory.FirstOrDefault(b => b.Id == id);
+            blogCategoryFromDB.Activity = status;
+
+            _context.SaveChanges();
+        }
+    }
+}
+```
+- Repository/Repository.cs
+```c#
+namespace Repository
+{
+    public class Repository<T> : IRepository<T> where T : class
+    {
+        protected readonly DbContext Context;
+        internal DbSet<T> dbset;
+
+        public Repository(DbContext context)
+        {
+            Context = context;
+            this.dbset = context.Set<T>();
+        }
+
+        public void Add(T entity)
+        {
+            dbset.Add(entity);
+        }
+
+        public T Get(int id)
+        {
+            return dbset.Find(id);
+        }
+
+        public IEnumerable<T> GetAll(Expression<Func<T, bool>> filter = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderby = null, string includeProperties = null)
+        {
+            IQueryable<T> query = dbset;
+            if (filter != null)
+            {
+                query = query.Where(filter);
+            }
+            //includeProperties will be coma seperated
+            if (includeProperties != null)
+            {
+                foreach (var includeProperty in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                {
+                    query = query.Include(includeProperty);
+                }
+            }
+            if (orderby != null)
+            {
+                return orderby(query).ToList();
+            }
+            return query.ToList();
+        }
+
+        public T GetFirstOrDefault(Expression<Func<T, bool>> filter = null, string includeProperties = null)
+        {
+            IQueryable<T> query = dbset;
+            if (filter != null)
+            {
+                query = query.Where(filter);
+            }
+            //includeProperties will be coma seperated
+            if (includeProperties != null)
+            {
+                foreach (var includeProperty in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                {
+                    query = query.Include(includeProperty);
+                }
+            }
+            return query.FirstOrDefault();
+        }
+
+        public ResultModel Remove(int id)
+        {
+
+            try
+            {
+                T entityToRemove = dbset.Find(id);
+                if (entityToRemove == null)
+                {
+                    return new ResultModel(Status.NotFound, false, Description.Not_Found, null);
+                }
+                return Remove(entityToRemove);
+
+
+
+            }
+            catch (Exception e)
+            {
+                return new ResultModel(Status.Failed, false, e.Message, null);
+            }
+
+        }
+
+        public ResultModel Remove(T entity)
+        {
+            try
+            {
+                dbset.Remove(entity);
+                return new ResultModel(Status.OK, true, Description.OK, null);
+            }
+            catch (Exception e)
+            {
+                return new ResultModel(Status.Failed, false, e.Message, null);
+            }
+        }
+    }
+}
+```
+- Repository/UnitOfWork.cs
+```c#
+namespace Repository
+{
+    public class UnitOfWork : IUnitOfWork
+    {
+        private readonly ApplicationDbContext _db;
+        public UnitOfWork(ApplicationDbContext db)
+        {
+            _db = db;
+
+            BlogCategory = new BlogCategoryRepository(_db);
+        }
+
+        public IBlogCategoryRepository BlogCategory { get; private set; }
+
+        public void Dispose()
+        {
+            _db.Dispose();
+        }
+
+        public void Save()
+        {
+            _db.SaveChanges();
+        }
+    }
+}
+```
+- ApplicationDbContext.cs
+```c#
+
+```
+- ResultModel.cs
+```c#
+
 ```
 
 
