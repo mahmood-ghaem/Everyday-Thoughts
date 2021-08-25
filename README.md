@@ -270,14 +270,112 @@ namespace DataAccess.Repository
 ```
 - DataAccess/ApplicationDbContext.cs
 ```c#
+namespace DataAccess
+{
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser, ApplicationRole, string>
+    {
+        public ApplicationDbContext()
+        {
 
+        }
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+            : base(options)
+        {
+        }
+
+        public DbSet<BlogCategory> BlogCategory { get; set; }
+    }
+}
 ```
 - DataAccess/ResultModel.cs
 ```c#
-
+namespace DataAccess
+{
+    public class ResultModel
+    {
+        public ResultModel()
+        {
+            this.StatusCode = Status.NotDefine;
+            this.IsSucceed = null;
+            this.Message = Description.NotDefine;
+            this.ReturnData = null;
+        }
+        public ResultModel(Status StatusCode, bool? IsSucceed, string Message, string ReturnData)
+        {
+            this.StatusCode = StatusCode;
+            this.IsSucceed = IsSucceed;
+            this.Message = Message;
+            this.ReturnData = ReturnData;
+        }
+        public Status StatusCode { get; set; }
+        public bool? IsSucceed { get; set; }
+        public string Message { get; set; }
+        public string ReturnData { get; set; }
+    }
+    public class ResultTitle
+    {
+        public const string OK = "OK";
+        public const string Failed = "Failed";
+        public const string ModelIsNotValid = "ModelIsNotValid";
+        public static string WrongCode = "WrongCode";
+    }
+    public enum Status
+    {
+        NotDefine=0,
+        OK = 1,
+        Failed = 2,
+        NotFound = 3,
+        ModelIsNotValid = 4,
+        CredentialError = 5,
+        FormNotCompleted=6
+    }
+    public static class Description
+    {
+        public static string NotDefine = "Not Define";
+        public static string OK = "Job is completed.";
+        public static string Failed = "There was an error.";
+    }
+}
 ```
+- Models/ApplicationUser.cs
+```c#
+namespace Models
+{
+    public class ApplicationUser : IdentityUser
+    {
+        public ApplicationUser()
+        {
+        }
 
+        [AllowNull]
+        public string FirstName { get; set; }
 
+        [AllowNull]
+        public string LastName { get; set; }
+    }
+}
+```
+- Models/ApplicationRole.cs
+```c#
+namespace Models
+{
+    public class ApplicationRole : IdentityRole
+    {
+        public string Description { get; set; }
+        public virtual ICollection<ApplicationRoleClaim> Claims { get; set; }
+    }
+}
+```
+- Models/ApplicationRoleClaim.cs
+```c#
+namespace Models
+{
+    public class ApplicationRoleClaim : IdentityRoleClaim<string>
+    {
+        public virtual ApplicationRole Role { get; set; }
+    }
+}
+```
 
 <h2 align="center">July 2021</h2>
 <!------------------------------------------------------------------------------July------------------------------------------------------------------------------>
