@@ -14,7 +14,43 @@ On this page, I will post the topics I deal with and work on them as a developer
 ### 3- Change user subscription in office 365 administration
 - point: When you buy new subscription in Office 365 administrator panel and asign it to a user just wait 30 minuts to activate user outlook and all the things, instead do a lot and even call Microsoft support like me 😅.
 
+### 4- ASP .NET Core Unit Of Work Repository Pattern:
+- BlogCategory.cs
+```c#
+      public BlogCategory()
+        {
+            Blogs = new HashSet<Blog>();
+        }
 
+        //public decimal Id { get; set; }
+        //public string Caption { get; set; }
+        //public string Description { get; set; }
+        //public bool? Activity { get; set; }
+
+        public virtual ICollection<Blog> Blogs { get; set; }
+        
+        
+        
+
+
+        [Key]
+        public int Id { get; set; }
+
+        [Required(ErrorMessage = "Please enter {0}")]
+        [StringLength(30)]
+        [Display(Name ="Blog Category Caption")]
+        public string Caption { get; set; }
+
+        [AllowNull]
+        [StringLength(400)]
+        [Display(Name = "Blog Category Description")]
+        public string Description { get; set; }
+
+        [AllowNull]
+        [Display(Name = "Activity Status")]
+        public bool? Activity { get; set; }
+    }
+```
 
 
 
