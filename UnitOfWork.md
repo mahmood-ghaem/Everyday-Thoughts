@@ -72,7 +72,7 @@ namespace Blog.DataAccess.IRepository
     }
 }
 ```
-- DataAccess/IRepository/UnitOfWork.cs
+- DataAccess/IRepository/IUnitOfWork.cs
 ```c#
 namespace Blog.DataAccess.IRepository
 {
