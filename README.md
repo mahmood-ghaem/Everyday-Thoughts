@@ -26,7 +26,7 @@ Good Luck 👍
 - Models/BlogCategory.cs
 - DataAccess/IRepository/IBlogCategoryRepository.cs
 - DataAccess/IRepository/IRepository.cs
-- DataAccess/IRepository/UnitOfWork.cs
+- DataAccess/IRepository/IUnitOfWork.cs
 - DataAccess/Repository/BlogCategoryRepository.cs
 - DataAccess/Repository/Repository.cs
 - DataAccess/Repository/UnitOfWork.cs
