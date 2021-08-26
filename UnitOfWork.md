@@ -7,7 +7,7 @@ Good Luck 👍
 
 - Models/BlogCategory.cs
 ```c#
-namespace Models
+namespace Blog.Models
 {
     public partial class BlogCategory
     {
@@ -37,7 +37,7 @@ namespace Models
 ```
 - DataAccess/IRepository/IBlogCategoryRepository.cs
 ```c#
-namespace DataAccess.IRepository
+namespace Blog.DataAccess.IRepository
 {
 
     public interface IBlogCategoryRepository : IRepository<BlogCategory>
@@ -52,7 +52,7 @@ namespace DataAccess.IRepository
 ```
 - DataAccess/IRepository/IRepository.cs
 ```c#
-namespace DataAccess.IRepository
+namespace Blog.DataAccess.IRepository
 {
     public interface IRepository<T> where T : class
     {
@@ -74,7 +74,7 @@ namespace DataAccess.IRepository
 ```
 - DataAccess/IRepository/UnitOfWork.cs
 ```c#
-namespace DataAccess.IRepository
+namespace Blog.DataAccess.IRepository
 {
     public interface IUnitOfWork: IDisposable
     {
@@ -86,7 +86,7 @@ namespace DataAccess.IRepository
 ```
 - DataAccess/Repository/BlogCategoryRepository.cs
 ```c#
-namespace DataAccess.Repository
+namespace Blog.DataAccess.Repository
 {
     public class BlogCategoryRepository : Repository<BlogCategory>, IBlogCategoryRepository
     {
@@ -126,7 +126,7 @@ namespace DataAccess.Repository
 ```
 - DataAccess/Repository/Repository.cs
 ```c#
-namespace DataAccess.Repository
+namespace Blog.DataAccess.Repository
 {
     public class Repository<T> : IRepository<T> where T : class
     {
@@ -232,7 +232,7 @@ namespace DataAccess.Repository
 ```
 - DataAccess/Repository/UnitOfWork.cs
 ```c#
-namespace DataAccess.Repository
+namespace Blog.DataAccess.Repository
 {
     public class UnitOfWork : IUnitOfWork
     {
@@ -260,7 +260,7 @@ namespace DataAccess.Repository
 ```
 - DataAccess/ApplicationDbContext.cs
 ```c#
-namespace DataAccess
+namespace Blog.DataAccess
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser, ApplicationRole, string>
     {
@@ -279,7 +279,7 @@ namespace DataAccess
 ```
 - DataAccess/ResultModel.cs
 ```c#
-namespace DataAccess
+namespace Blog.DataAccess
 {
     public class ResultModel
     {
@@ -329,7 +329,7 @@ namespace DataAccess
 ```
 - Models/ApplicationUser.cs
 ```c#
-namespace Models
+namespace Blog.Models
 {
     public class ApplicationUser : IdentityUser
     {
@@ -347,7 +347,7 @@ namespace Models
 ```
 - Models/ApplicationRole.cs
 ```c#
-namespace Models
+namespace Blog.Models
 {
     public class ApplicationRole : IdentityRole
     {
@@ -358,7 +358,7 @@ namespace Models
 ```
 - Models/ApplicationRoleClaim.cs
 ```c#
-namespace Models
+namespace Blog.Models
 {
     public class ApplicationRoleClaim : IdentityRoleClaim<string>
     {
@@ -368,7 +368,7 @@ namespace Models
 ```
 - Controllers/BlogCategoryController.cs
 ```c#
-namespace Controllers
+namespace Blog.Controllers
 {
     public class BlogCategoryController : Controller
     {
