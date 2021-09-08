@@ -19,7 +19,9 @@ I also changed the hosting. I replaced the site that was previously based on Wor
 After these events, everything worked fine, except for users' emails, which did not have the ability to receive emails.
 After researching, I realized that I had to change Name Servers in hosting.
 
-<div align="center">![NS](/images/logo.png)</div>
+<div align="center">
+  ![NS](/Data/Nameservers-Office365.png)
+</div>
 
 
 <h2 align="center">August 2021</h2>
