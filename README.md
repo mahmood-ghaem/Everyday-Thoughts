@@ -3,6 +3,22 @@
 On this page, I will post the topics I deal with and work on them as a developer and administrator of office automation.
 
 
+
+
+<h2 align="center">September 2021</h2>
+<!-----------------------------------------------------------------------------September----------------------------------------------------------------------------->
+
+### 1- An experience about Office 365:
+
+We have a web domain that we added in the Office admin panel.
+We have created several users for this domain and all of them use their email to access Outlook.
+
+I transferred the domain from the account of the company that bought it for us to our account.
+I also changed the hosting. I replaced the site that was previously based on WordPress with a new version that I wrote based on .NET.
+After these events, everything worked fine, except for users' emails, which did not have the ability to receive emails.
+After researching, I realized that I had to make several changes in hosting.
+
+
 <h2 align="center">August 2021</h2>
 <!-----------------------------------------------------------------------------August----------------------------------------------------------------------------->
 
