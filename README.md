@@ -8,7 +8,7 @@ On this page, I will post the topics I deal with and work on them as a developer
 <h2 align="center">September 2021</h2>
 <!-----------------------------------------------------------------------------September----------------------------------------------------------------------------->
 
-### 1- An experience about Office 365:
+### 1- An experience about Office 365 administration:
 
 We have a web domain that we added in the Office admin panel.
 We have created several users for this domain and all of them use their email to access Outlook.
@@ -20,7 +20,7 @@ After these events, everything worked fine, except for users' emails, which did 
 After researching, I realized that I had to change Name Servers in hosting.
 
 <div align="center">
-  ![NS](/Data/Nameservers-Office365.png)
+  <img src='/Data/Nameservers-Office365.png' alt='NameServers related to office 365' />
 </div>
 
 
