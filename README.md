@@ -23,6 +23,8 @@ After researching, I realized that I had to change Name Servers in hosting.
   <img src='/Data/Nameservers-Office365.png' alt='NameServers related to office 365' />
 </div>
 
+> Office 365 admin panel -> Settings -> Domains -> DNS records 
+
 
 <h2 align="center">August 2021</h2>
 <!-----------------------------------------------------------------------------August----------------------------------------------------------------------------->
