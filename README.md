@@ -17,7 +17,9 @@ I transferred the domain from the account of the company that bought it for us t
 I also changed the hosting. I replaced the site that was previously based on WordPress with a new version that I wrote based on ASP .NET Core[de-medewerker.nl](https://de-medewerker.nl).
 
 After these events, everything worked fine, except for users' emails, which did not have the ability to receive emails.
-After researching, I realized that I had to make several changes in hosting.
+After researching, I realized that I had to change Name Servers in hosting.
+
+<div align="center">![NS](/images/logo.png)</div>
 
 
 <h2 align="center">August 2021</h2>
