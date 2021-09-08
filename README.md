@@ -25,6 +25,14 @@ After researching, I realized that I had to change Name Servers in hosting.
 
 > Office 365 admin panel -> Settings -> Domains -> DNS records 👆
 
+### 2- Show loading before submiting form in a view (ASP .Net Core)
+
+After the user clicked the submit button, I was going to load a JavaScript on the screen.
+Everything worked fine if the user entered all the fields correctly.
+But if Volidation found an error in the input information, the form would not be submitted and loading would still be displayed.
+I did a lot of Google to be able to find out if the page is valid or not in jQuery or JavaScript, and show the loading if it is valid, otherwise the loading will not be displayed.
+The file `jquery.validate.unobtrusive.js` runs after the functions written on the page so it always shows the form as valid. So I decided to add a line to the `jquery.validate.unobtrusive.js` file.
+
 
 <h2 align="center">August 2021</h2>
 <!-----------------------------------------------------------------------------August----------------------------------------------------------------------------->
