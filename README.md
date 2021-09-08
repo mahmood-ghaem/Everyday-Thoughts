@@ -27,12 +27,36 @@ After researching, I realized that I had to change Name Servers in hosting.
 
 ### 2- Show loading before submiting form in a view (ASP .Net Core)
 
-After the user clicked the submit button, I was going to load a JavaScript on the screen.
-Everything worked fine if the user entered all the fields correctly.
-But if Volidation found an error in the input information, the form would not be submitted and loading would still be displayed.
-I did a lot of Google to be able to find out if the page is valid or not in jQuery or JavaScript, and show the loading if it is valid, otherwise the loading will not be displayed.
-The file `jquery.validate.unobtrusive.js` runs after the functions written on the page so it always shows the form as valid. So I decided to add a line to the `jquery.validate.unobtrusive.js` file.
+After the user clicked the submit button, I was going to show a loading DIV by JavaScript on the screen and disable the all buttons. 💡
 
+Everything worked fine if the user entered all the fields correctly.
+
+But if Volidation found an error in the input information, the form would not be submitted and loading would still be displayed. 🤷
+
+I did a lot of Google to be able to find out if the page is valid or not in jQuery or JavaScript, and show the loading if it is valid, otherwise the loading will not be displayed.
+
+The file `jquery.validate.unobtrusive.js` runs after the functions written on the page so when I checked on the page with JavaScript whether the form is valid or not, the answer was always true. So I decided to add some lines to the `jquery.validate.unobtrusive.js` file.
+
+```javascript
+    function onErrors(event, validator) {  // 'this' is the form element
+        var container = $(this).find("[data-valmsg-summary=true]"),
+            list = container.find("ul");
+        
+        if (list && list.length && validator.errorList.length) {
+            list.empty();
+            container.addClass("validation-summary-errors").removeClass("validation-summary-valid");
+
+            $.each(validator.errorList, function () {
+                $("<li />").html(this.message).appendTo(list);
+            });
+        }
+        // This is my code added, and If an error occurs, it will hide the loading.
+        if ($("#AjaxLoader").length) {
+            $("#AjaxLoader").hide();
+        };
+    }
+```
+I know this may not be the best way, but it solved my problem.😉
 
 <h2 align="center">August 2021</h2>
 <!-----------------------------------------------------------------------------August----------------------------------------------------------------------------->
