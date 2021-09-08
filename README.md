@@ -25,6 +25,8 @@ After researching, I realized that I had to change Name Servers in hosting.
 
 > Office 365 admin panel -> Settings -> Domains -> DNS records 👆
 
+[Related article](https://docs.microsoft.com/en-US/microsoft-365/admin/get-help-with-domains/dns-basics?WT.mc_id=365AdminCSH_inproduct&view=o365-worldwide)
+
 ### 2- Show loading before submiting form in a view (ASP .Net Core)
 
 After the user clicked the submit button, I was going to show a loading DIV by JavaScript on the screen and disable the all buttons. 💡
