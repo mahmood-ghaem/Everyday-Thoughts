@@ -68,9 +68,9 @@ I know this may not be the best way, but it solved my problem.😉
 
 ### 5- Working with Gravity Form in WordPress
 
-### 6- Following the problems I had with adding the domain in Office 365, in the last step, I realized that some users of Office 365 have problems sending and receiving to some addresses and encounter problems.
+### 6- Following the problems I had with adding the domain in Office 365, in the last step, I realized that some users of Office 365 have problems sending and receiving to some email addresses and encounter problems.
 
-And solutions:
+## And solutions:
 
 After you add the domain to the Office 365 admin panel, you need to change the DNS in the domain hosting (base on Microsoft NS) and then disable the email service in the hosting to prevent conflict.
 
