@@ -75,8 +75,10 @@ I know this may not be the best way, but it solved my problem.😉
 After you add the domain to the Office 365 admin panel, you need to change the DNS in the domain hosting (base on Microsoft NS) and then disable the email service in the hosting to prevent conflict.
 
 <div align="center">
-  <img src='/Data/Nameservers-Office365.png' alt='NameServers related to office 365' />
+  <img src='/Data/DisableMailServiceInHosting.png' alt='Disable Mail Service In Hosting' />
 </div>
+
+> Domain Dashboard -> Email -> Email Settings (in Plesk) 👆
 
 In the domain registrar, you only need to define NS hosting, and in DNS hosting, you need to define DNS records.
 
