@@ -4,6 +4,20 @@ On this page, I will post the topics I deal with and work on them as a developer
 
 
 
+<h2 align="center">October 2021</h2>
+<!-----------------------------------------------------------------------------October----------------------------------------------------------------------------->
+### 1- Printer problem
+[How to Clean Clogged Printhead Nozzles for Epson Printers](https://www.youtube.com/watch?v=ep77Wj_Vq6k)
+[Clean sensor cartridge](https://www.youtube.com/watch?v=3HeBhiIQFUg&t=289s) 
+
+Be careful not to get the sensors of cartridge, wet when cleaning nozzeles.
+
+### 2- Use google Chart in ASP .Net Core
+[Link](https://developers.google.com/chart)
+
+### 3- Blog
+[Link](https://www.qadrit.nl/Public/Blog)
+
 
 <h2 align="center">September 2021</h2>
 <!-----------------------------------------------------------------------------September----------------------------------------------------------------------------->
