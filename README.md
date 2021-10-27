@@ -23,6 +23,10 @@ Be careful not to get the sensors of cartridge, wet when cleaning nozzeles.
 
 [Link](https://www.qadrit.nl/Public/Blog)
 
+### 4- Customize UserIdentity of ASP .Net Core
+
+### 5- 
+
 
 <h2 align="center">September 2021</h2>
 <!-----------------------------------------------------------------------------September----------------------------------------------------------------------------->
