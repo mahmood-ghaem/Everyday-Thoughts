@@ -27,6 +27,17 @@ Be careful not to get the sensors of cartridge, wet when cleaning nozzeles.
 
 ### 5- Notification in ASP .Net Core
 
+### 6- Entity Framework Core - Include Multiple Levels of a Property for a Collection
+
+[Link](https://entityframeworkcore.com/knowledge-base/53001072/entity-framework-core---include-multiple-levels-of-a-property-for-a-collection)
+
+```C#
+var blogs = context.Blogs
+    .Include(blog => blog.Posts)
+        .ThenInclude(post => post.Author)
+    .ToList();
+```
+
 
 <h2 align="center">September 2021</h2>
 <!-----------------------------------------------------------------------------September----------------------------------------------------------------------------->
