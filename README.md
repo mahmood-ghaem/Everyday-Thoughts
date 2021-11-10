@@ -3,6 +3,27 @@
 On this page, I will post the topics I deal with and work on them as a developer and administrator of office automation.
 
 
+<h2 align="center">November 2021</h2>
+<!-----------------------------------------------------------------------------November----------------------------------------------------------------------------->
+
+### 1- ASP .Net Core UserIdentity 
+
+## Subject: 
+
+Get all users in a role with other navigation property related to each user.
+
+## Solution:
+
+```C#
+            //The first step: get all user id collection as userids based on role from (*1) _context.UserRoles 
+            var candidateIds = _context.UserRoles.Where(w => w.RoleId == "ID of role").Select(b => b.UserId).Distinct().ToList();
+
+            //The second step : find all users collection from _context.Users  which 's Id is contained at candidateIds also use Include and ThenInclude to fill navigation properties
+            var candidates = _context.Users.Include(i => i.JobCandidates).ThenInclude(j => j.JobBoard).Include(b => b.PersonDocuments).Where(w => candidateIds.Any(c => c == w.Id)).ToList();
+            
+            // (*1) private readonly ApplicationDbContext _context;
+```
+[Refrence](https://forums.asp.net/t/2129247.aspx?Get+all+users+with+a+specific+role+in+ASP+NET+Core+2+0)
 
 <h2 align="center">October 2021</h2>
 <!-----------------------------------------------------------------------------October----------------------------------------------------------------------------->
