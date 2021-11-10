@@ -8,11 +8,11 @@ On this page, I will post the topics I deal with and work on them as a developer
 
 ### 1- ASP .Net Core UserIdentity 
 
-## Subject: 
+#### Subject: 
 
 Get all users in a role with other navigation property related to each user.
 
-## Solution:
+#### Solution:
 
 ```C#
             //The first step: get all user id collection as userids based on role from (*1) _context.UserRoles 
