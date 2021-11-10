@@ -28,6 +28,8 @@ var users = _context.Users.Include(i => i.(*2)).ThenInclude(j => j.(*3)).Include
 ```
 [Refrence](https://forums.asp.net/t/2129247.aspx?Get+all+users+with+a+specific+role+in+ASP+NET+Core+2+0)
 
+### 2- Send email by WPF
+
 <h2 align="center">October 2021</h2>
 <!-----------------------------------------------------------------------------October----------------------------------------------------------------------------->
 
