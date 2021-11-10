@@ -16,12 +16,13 @@ Get all users in a role with other navigation property related to each user.
 
 ```C#
             //The first step: get all user id collection as userids based on role from (*1) _context.UserRoles 
-            var candidateIds = _context.UserRoles.Where(w => w.RoleId == "ID of role").Select(b => b.UserId).Distinct().ToList();
+            var userIds = _context.UserRoles.Where(w => w.RoleId == "ID of role").Select(b => b.UserId).Distinct().ToList();
 
-            //The second step : find all users collection from _context.Users  which 's Id is contained at candidateIds also use Include and ThenInclude to fill navigation properties
-            var candidates = _context.Users.Include(i => i.JobCandidates).ThenInclude(j => j.JobBoard).Include(b => b.PersonDocuments).Where(w => candidateIds.Any(c => c == w.Id)).ToList();
+            //The second step : find all users collection from _context.Users  which 's Id is contained at userIds also use Include and ThenInclude to fill navigation properties
+            var users = _context.Users.Include(i => i.(*2)).ThenInclude(j => j.(*3)).Include(b => b.(*4)).Where(w => userIds.Any(c => c == w.Id)).ToList();
             
             // (*1) private readonly ApplicationDbContext _context;
+            // (*2), (*3), (*4) each navigation property you want to fill in.
 ```
 [Refrence](https://forums.asp.net/t/2129247.aspx?Get+all+users+with+a+specific+role+in+ASP+NET+Core+2+0)
 
