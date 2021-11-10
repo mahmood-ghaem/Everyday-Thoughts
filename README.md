@@ -18,8 +18,10 @@ Get all users in a role with other navigation property related to each user.
 //The first step: get all user id collection as userids based on role from (*1) _context.UserRoles 
 var userIds = _context.UserRoles.Where(w => w.RoleId == "ID of role").Select(b => b.UserId).Distinct().ToList();
 
-//The second step : find all users collection from _context.Users  which 's Id is contained at userIds also use Include and ThenInclude to fill navigation properties
-var users = _context.Users.Include(i => i.(*2)).ThenInclude(j => j.(*3)).Include(b => b.(*4)).Where(w => userIds.Any(c => c == w.Id)).ToList();
+//The second step : find all users collection from _context.Users  which 's Id is contained at userIds 
+// also use Include and ThenInclude to fill navigation properties
+var users = _context.Users.Include(i => i.(*2)).ThenInclude(j => j.(*3)).Include(b => b.(*4))
+                          .Where(w => userIds.Any(c => c == w.Id)).ToList();
 
 // (*1) private readonly ApplicationDbContext _context;
 // (*2), (*3), (*4) each navigation property you want to fill in.
