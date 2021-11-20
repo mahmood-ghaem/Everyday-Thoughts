@@ -30,6 +30,30 @@ var users = _context.Users.Include(i => i.(*2)).ThenInclude(j => j.(*3)).Include
 
 ### 2- Send email by WPF
 
+### 3- Select records count from multiple tables in a single query
+```C#
+ public IEnumerable<ApplicationUserActivitiesVM> GetUserActivities(string userId)
+        {
+            var result = from dummyRow in new List<string> { "X" }
+                         join blog in _context.Blog on 1 equals 1 into bg
+                         join ublog in _context.Blog.Where(w => w.AuthorId == userId) on 1 equals 1 into ubg
+                         join interview in _context.CandidateInterview on 1 equals 1 into iw
+                         join candidate in _context.UserRoles.Where(w => w.RoleId == "role id placed here") on 1 equals 1 into ce
+
+                         select new ApplicationUserActivitiesVM()
+                         {
+                             BlogsCount = bg.Count(),
+                             CandidatesCount = ce.Count(),
+                             InterviewsCount = iw.Count(),
+                             UserBlogs = ubg.Select(s=>new UserActivityBlog(s)).ToList(),
+                         };
+
+            return result;
+        }
+```
+
+[Refrence](https://stackoverflow.com/questions/21182116/select-records-count-from-multiple-tables-in-a-single-query)
+
 <h2 align="center">October 2021</h2>
 <!-----------------------------------------------------------------------------October----------------------------------------------------------------------------->
 
