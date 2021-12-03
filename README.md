@@ -24,7 +24,7 @@ var users = _context.Users.Include(i => i.(*2)).ThenInclude(j => j.(*3)).Include
                           .Where(w => userIds.Any(c => c == w.Id)).ToList();
 
 // (*1) private readonly ApplicationDbContext _context;
-// (*2), (*3), (*4) each navigation property you want to fill in.
+// (*2), (*3), (*4) each navigation property you want to fill in. 
 ```
 [Refrence](https://forums.asp.net/t/2129247.aspx?Get+all+users+with+a+specific+role+in+ASP+NET+Core+2+0)
 
