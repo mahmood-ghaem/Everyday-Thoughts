@@ -2,6 +2,14 @@
 
 On this page, I will post the topics I deal with and work on them as a developer and administrator of office automation.
 
+<h2 align="center">December 2021</h2>
+<!-----------------------------------------------------------------------------December----------------------------------------------------------------------------->
+
+### 1- Outlook Calendar Integration with ASP .NET Core
+
+[Refrence](https://www.youtube.com/watch?v=19WNyihLgR0&list=PLlaJNuOIC_9-xCapKiQ-T5TKVu8ZSLpQR&index=6)
+
+[My Issue](https://stackoverflow.com/questions/70362288/asp-net-core-3-1-problem-get-access-token-with-microsoft-oauth-2-0)
 
 <h2 align="center">November 2021</h2>
 <!-----------------------------------------------------------------------------November----------------------------------------------------------------------------->
