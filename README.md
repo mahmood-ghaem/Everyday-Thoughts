@@ -11,6 +11,14 @@ On this page, I will post the topics I deal with and work on them as a developer
 
 [My Issue](https://stackoverflow.com/questions/70362288/asp-net-core-3-1-problem-get-access-token-with-microsoft-oauth-2-0)
 
+### 2- Entity Framework Core zero-or-one to zero-or-one relation
+
+[Refrence](https://entityframeworkcore.com/knowledge-base/54497784/entity-framework-core-zero-or-one-to-zero-or-one-relation)
+
+[My Issue](https://stackoverflow.com/questions/70423589/entity-framework-core-one-to-zero-or-one-on-delete)
+
+[Configure One-to-Zero-or-One Relationship in Entity Framework 6](https://www.entityframeworktutorial.net/code-first/configure-one-to-one-relationship-in-code-first.aspx)
+
 <h2 align="center">November 2021</h2>
 <!-----------------------------------------------------------------------------November----------------------------------------------------------------------------->
 
