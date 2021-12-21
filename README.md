@@ -19,6 +19,10 @@ On this page, I will post the topics I deal with and work on them as a developer
 
 [Configure One-to-Zero-or-One Relationship in Entity Framework 6](https://www.entityframeworktutorial.net/code-first/configure-one-to-one-relationship-in-code-first.aspx)
 
+### 3- Asp .Net Core 3.1 create a service to send email confirmation
+
+[My Issue](https://stackoverflow.com/questions/70438306/asp-net-core-3-1-create-a-service-to-send-email-confirmation)
+
 <h2 align="center">November 2021</h2>
 <!-----------------------------------------------------------------------------November----------------------------------------------------------------------------->
 
