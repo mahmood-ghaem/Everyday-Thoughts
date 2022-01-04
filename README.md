@@ -2,6 +2,17 @@
 
 On this page, I will post the topics I deal with and work on them as a developer and administrator of office automation.
 
+<h2 align="center">January 2022</h2>
+<!-----------------------------------------------------------------------------January----------------------------------------------------------------------------->
+
+### 1- Delete Commit on Github
+
+git reset --hard 3813803
+git push --force origin master
+
+[Refrence](https://stackoverflow.com/questions/38402396/how-to-delete-commits-from-git-on-github-and-bitbucket)
+
+
 <h2 align="center">December 2021</h2>
 <!-----------------------------------------------------------------------------December----------------------------------------------------------------------------->
 
