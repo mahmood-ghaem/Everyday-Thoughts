@@ -7,8 +7,9 @@ On this page, I will post the topics I deal with and work on them as a developer
 
 ### 1- Delete Commit on Github
 
-git reset --hard 3813803
-git push --force origin master
+* git reset --hard 3813803
+
+* git push --force origin master
 
 [Refrence](https://stackoverflow.com/questions/38402396/how-to-delete-commits-from-git-on-github-and-bitbucket)
 
