@@ -5,7 +5,7 @@ On this page, I will post the topics I deal with and work on them as a developer
 <h2 align="center">January 2022</h2>
 <!-----------------------------------------------------------------------------January----------------------------------------------------------------------------->
 
-### 1- Delete Commit on Github
+### 1- Delete a Commit on Github Repository
 
 * git reset --hard 3813803
 
