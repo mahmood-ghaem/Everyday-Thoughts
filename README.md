@@ -8,10 +8,18 @@ On this page, I will post the topics I deal with and work on them as a developer
 ### 1- Delete a Commit on Github Repository
 
 * git reset --hard 3813803
-
 * git push --force origin master
 
 [Refrence](https://stackoverflow.com/questions/38402396/how-to-delete-commits-from-git-on-github-and-bitbucket)
+
+### 2- Create and setup DevOps account
+
+### 3- Microsoft Azure
+
+* Start free subscription
+* Create Virtual Machine as IIS server
+* Create Virtual Machine as SQL server
+* Connect servers in one resource group
 
 
 <h2 align="center">December 2021</h2>
