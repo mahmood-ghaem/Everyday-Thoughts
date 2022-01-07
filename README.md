@@ -35,7 +35,14 @@ On this page, I will post the topics I deal with and work on them as a developer
 
 [My Issue](https://stackoverflow.com/questions/70362288/asp-net-core-3-1-problem-get-access-token-with-microsoft-oauth-2-0)
 
-### 2- Entity Framework Core zero-or-one to zero-or-one relation
+### 2- Use the Microsoft Graph API
+
+* Authentication and Authorization
+* Get a token
+* Use the access token to call Microsoft Graph
+* Use the refresh token
+
+### 3- Entity Framework Core zero-or-one to zero-or-one relation
 
 [Refrence](https://entityframeworkcore.com/knowledge-base/54497784/entity-framework-core-zero-or-one-to-zero-or-one-relation)
 
@@ -43,7 +50,7 @@ On this page, I will post the topics I deal with and work on them as a developer
 
 [Configure One-to-Zero-or-One Relationship in Entity Framework 6](https://www.entityframeworktutorial.net/code-first/configure-one-to-one-relationship-in-code-first.aspx)
 
-### 3- Asp .Net Core 3.1 create a service to send email confirmation
+### 4- Asp .Net Core 3.1 create a service to send email confirmation
 
 [My Issue](https://stackoverflow.com/questions/70438306/asp-net-core-3-1-create-a-service-to-send-email-confirmation)
 
