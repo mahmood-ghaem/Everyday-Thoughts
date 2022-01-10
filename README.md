@@ -29,6 +29,10 @@ On this page, I will post the topics I deal with and work on them as a developer
 
 [Refrence](https://feras.blog/how-to-use-asp-net-identity-and-identityserver4-in-your-solution)
 
+### 6- Research about Scrum
+
+[Refrence](https://virgool.io/@sadeqnickbakht/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%A7%D8%B3%DA%A9%D8%B1%D8%A7%D9%85-scrum-qqmstf2clhfg)
+
 
 
 
