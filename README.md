@@ -35,6 +35,10 @@ On this page, I will post the topics I deal with and work on them as a developer
 
 [Refrence](https://virgool.io/@sadeqnickbakht/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%A7%D8%B3%DA%A9%D8%B1%D8%A7%D9%85-scrum-qqmstf2clhfg)
 
+### 7- How to Boot Windows from SD Card
+
+[Link](https://www.partitionwizard.com/clone-disk/boot-from-sd-card.html)
+
 
 
 
