@@ -39,6 +39,10 @@ On this page, I will post the topics I deal with and work on them as a developer
 
 [Link](https://www.partitionwizard.com/clone-disk/boot-from-sd-card.html)
 
+### 8- Permission-Based Authorization in ASP.NET Core 5
+
+[Reference](https://codewithmukesh.com/blog/permission-based-authorization-in-aspnet-core)
+
 
 
 
