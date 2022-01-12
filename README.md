@@ -14,6 +14,9 @@ On this page, I will post the topics I deal with and work on them as a developer
 
 ### 2- Create and setup DevOps account
 
+* Work with Backlogs
+* Work with Sprints
+
 ### 3- Microsoft Azure
 
 * Start free subscription
