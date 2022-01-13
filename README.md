@@ -16,6 +16,9 @@ On this page, I will post the topics I deal with and work on them as a developer
 
 * Work with Backlogs
 * Work with Sprints
+* Repos & connect with Visual Studio 2019
+* Pipelines
+* Release code and db to Azure VM
 
 ### 3- Microsoft Azure
 
