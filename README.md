@@ -33,7 +33,9 @@ On this page, I will post the topics I deal with and work on them as a developer
 
 [Link](https://www.dntips.ir/post/2903/%D8%A7%D9%85%D9%86-%D8%B3%D8%A7%D8%B2%DB%8C-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C-asp-net-core-%D8%AA%D9%88%D8%B3%D8%B7-identityserver-4x-%D9%82%D8%B3%D9%85%D8%AA-%D8%A7%D9%88%D9%84-%D9%86%DB%8C%D8%A7%D8%B2-%D8%A8%D9%87-%D8%AA%D8%A7%D9%85%DB%8C%D9%86-%DA%A9%D9%86%D9%86%D8%AF%D9%87%E2%80%8C%DB%8C-%D9%87%D9%88%DB%8C%D8%AA-%D9%85%D8%B1%DA%A9%D8%B2%DB%8C)
 
-[IdentityServer4 EntityFramework](https://deblokt.com/2019/09/20/02-identityserver4-entityframework/)
+[01. IdentityServer4 Quickstart](https://deblokt.com/2019/09/01/01-identityserver4-quickstart)
+
+[02. IdentityServer4 EntityFramework .NET Core 3.1](https://deblokt.com/2020/01/24/02-identityserver4-entityframework-net-core-3-1)
 
 ### 5- ASP.NET Identity And IdentityServer4
 
