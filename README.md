@@ -35,8 +35,9 @@ On this page, I will post the topics I deal with and work on them as a developer
 
 #####  IdentityServer4 .NET Core 3.1
 
-* [01. Quickstart](https://deblokt.com/2020/01/24/01-identityserver4-quickstart-net-core-3-1)
-* [02. With EntityFramework](https://deblokt.com/2020/01/24/02-identityserver4-entityframework-net-core-3-1)
+* [Quickstart](https://deblokt.com/2020/01/24/01-identityserver4-quickstart-net-core-3-1)
+* [EntityFramework](https://deblokt.com/2020/01/24/02-identityserver4-entityframework-net-core-3-1)
+* [ASP.NET Core Identity](https://deblokt.com/2020/01/24/04-part-1-identityserver4-asp-net-core-identity-net-core-3-1)
 
 ### 5- ASP.NET Identity And IdentityServer4
 
