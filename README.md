@@ -51,9 +51,13 @@ On this page, I will post the topics I deal with and work on them as a developer
 
 [Reference](https://codewithmukesh.com/blog/permission-based-authorization-in-aspnet-core)
 
-[Reference](https://benfoster.io/blog/customize-authorization-response-aspnet-core/)
+[Reference](https://benfoster.io/blog/customize-authorization-response-aspnet-core)
 
+### 9- Script to change table ownership in MS SQL - from admin_demo to dbo
 
+```
+EXEC sp_changeobjectowner '[admin_demo].[AspNetUsers]', dbo
+```
 
 
 <h2 align="center">December 2021</h2>
