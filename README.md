@@ -62,11 +62,11 @@ On this page, I will post the topics I deal with and work on them as a developer
 
 ### 9- Script to change table ownership in MS SQL - from admin_demo to dbo
 
-### 10- GitHub Action to automaticaly deploy
-
 ```
 EXEC sp_changeobjectowner '[admin_demo].[AspNetUsers]', dbo
 ```
+
+### 10- GitHub Action to automaticaly deploy
 
 
 <h2 align="center">December 2021</h2>
