@@ -26,6 +26,9 @@ On this page, I will post the topics I deal with and work on them as a developer
 * Create Virtual Machine as IIS server
 * Create Virtual Machine as SQL server
 * Connect servers in one resource group
+* Create SQL Database
+* Create Web Application
+* Publish with Visual Studio 2019 to Azure IIS VM or WebApp
 
 ### 4- IdentityServer 4
 
@@ -58,6 +61,8 @@ On this page, I will post the topics I deal with and work on them as a developer
 [Reference](https://benfoster.io/blog/customize-authorization-response-aspnet-core)
 
 ### 9- Script to change table ownership in MS SQL - from admin_demo to dbo
+
+### 10- GitHub Action to automaticaly deploy
 
 ```
 EXEC sp_changeobjectowner '[admin_demo].[AspNetUsers]', dbo
