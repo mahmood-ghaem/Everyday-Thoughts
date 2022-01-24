@@ -72,7 +72,7 @@ EXEC sp_changeobjectowner '[admin_demo].[AspNetUsers]', dbo
 
 Platform.cs:
 
-```
+```c#
 using System.ComponentModel.DataAnnotations;
 
 namespace PlatformService.Models
@@ -97,7 +97,7 @@ namespace PlatformService.Models
 
 PrepDb.cs:
 
-```
+```c#
 using System;
 using System.Linq;
 using Microsoft.AspNetCore.Builder;
@@ -155,7 +155,7 @@ namespace PlatformService.Data
 
 Startup.cs:
 
-```
+```c#
 public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 {
     .
@@ -168,6 +168,8 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 
 }
 ```
+
+[Reference](https://www.youtube.com/watch?v=DgVjEo3OGBI&t=4644s)
 
 <h2 align="center">December 2021</h2>
 <!-----------------------------------------------------------------------------December----------------------------------------------------------------------------->
