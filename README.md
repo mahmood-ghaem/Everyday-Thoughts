@@ -277,6 +277,8 @@ namespace PlatformService.Profiles
 
 [Reference](https://youtu.be/DgVjEo3OGBI?t=5807)
 
+[The case for two-way mapping in AutoMapper](https://lostechies.com/jimmybogard/2009/09/18/the-case-for-two-way-mapping-in-automapper)
+
 <h2 align="center">December 2021</h2>
 <!-----------------------------------------------------------------------------December----------------------------------------------------------------------------->
 
