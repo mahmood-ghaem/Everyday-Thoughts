@@ -32,9 +32,8 @@ On this page, I will post the topics I deal with and work on them as a developer
 
 ### 4- IdentityServer 4
 
-[Link](https://identityserver4.readthedocs.io/en/latest)
-
-[Link](https://www.dntips.ir/post/2903/%D8%A7%D9%85%D9%86-%D8%B3%D8%A7%D8%B2%DB%8C-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C-asp-net-core-%D8%AA%D9%88%D8%B3%D8%B7-identityserver-4x-%D9%82%D8%B3%D9%85%D8%AA-%D8%A7%D9%88%D9%84-%D9%86%DB%8C%D8%A7%D8%B2-%D8%A8%D9%87-%D8%AA%D8%A7%D9%85%DB%8C%D9%86-%DA%A9%D9%86%D9%86%D8%AF%D9%87%E2%80%8C%DB%8C-%D9%87%D9%88%DB%8C%D8%AA-%D9%85%D8%B1%DA%A9%D8%B2%DB%8C)
+* [Link](https://identityserver4.readthedocs.io/en/latest)
+* [Link](https://www.dntips.ir/post/2903/%D8%A7%D9%85%D9%86-%D8%B3%D8%A7%D8%B2%DB%8C-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C-asp-net-core-%D8%AA%D9%88%D8%B3%D8%B7-identityserver-4x-%D9%82%D8%B3%D9%85%D8%AA-%D8%A7%D9%88%D9%84-%D9%86%DB%8C%D8%A7%D8%B2-%D8%A8%D9%87-%D8%AA%D8%A7%D9%85%DB%8C%D9%86-%DA%A9%D9%86%D9%86%D8%AF%D9%87%E2%80%8C%DB%8C-%D9%87%D9%88%DB%8C%D8%AA-%D9%85%D8%B1%DA%A9%D8%B2%DB%8C)
 
 #####  IdentityServer4 .NET Core 3.1
 
@@ -56,9 +55,8 @@ On this page, I will post the topics I deal with and work on them as a developer
 
 ### 8- Permission-Based Authorization in ASP.NET Core 5
 
-[Reference](https://codewithmukesh.com/blog/permission-based-authorization-in-aspnet-core)
-
-[Reference](https://benfoster.io/blog/customize-authorization-response-aspnet-core)
+* [Reference](https://codewithmukesh.com/blog/permission-based-authorization-in-aspnet-core)
+* [Reference](https://benfoster.io/blog/customize-authorization-response-aspnet-core)
 
 ### 9- Script to change table ownership in MS SQL - from admin_demo to dbo
 
@@ -275,9 +273,11 @@ namespace PlatformService.Profiles
 }
 ```
 
-[Reference](https://youtu.be/DgVjEo3OGBI?t=5807)
+* [Reference](https://youtu.be/DgVjEo3OGBI?t=5807)
+* [The case for two-way mapping in AutoMapper](https://lostechies.com/jimmybogard/2009/09/18/the-case-for-two-way-mapping-in-automapper)
+* [Mapping domain model to view model via AutoMapper or not](https://stackoverflow.com/questions/16527921/mapping-domain-model-to-view-model-via-automapper-or-not)
 
-[The case for two-way mapping in AutoMapper](https://lostechies.com/jimmybogard/2009/09/18/the-case-for-two-way-mapping-in-automapper)
+
 
 <h2 align="center">December 2021</h2>
 <!-----------------------------------------------------------------------------December----------------------------------------------------------------------------->
