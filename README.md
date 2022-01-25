@@ -273,6 +273,12 @@ namespace PlatformService.Profiles
 }
 ```
 
+In Controller:
+
+```c#
+var platformReadDto = _mapper.Map<PlatformReadDto>(platformModel);
+```
+
 * [Reference](https://youtu.be/DgVjEo3OGBI?t=5807)
 * [The case for two-way mapping in AutoMapper](https://lostechies.com/jimmybogard/2009/09/18/the-case-for-two-way-mapping-in-automapper)
 * [Mapping domain model to view model via AutoMapper or not](https://stackoverflow.com/questions/16527921/mapping-domain-model-to-view-model-via-automapper-or-not)
