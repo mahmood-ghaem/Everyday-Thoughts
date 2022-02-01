@@ -55,6 +55,10 @@ Note: Differents between Windows and Linux: Windows `dir1\dir2` Linux `dir1/dir2
 
 `ctrl+w` delete a word
 
+`nano file1.txt`
+
+`cat file1.txt`, `more file1.txt`, `less file1.txt`, `head -n 5 file1.txt` shows first 5 lines, `tail -n 5 file1.txt` shows last 5 lines
+
 
 
 <h2 align="center">January 2022</h2>
