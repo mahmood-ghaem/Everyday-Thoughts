@@ -59,6 +59,14 @@ Note: Differents between Windows and Linux: Windows `dir1\dir2` Linux `dir1/dir2
 
 `cat file1.txt`, `more file1.txt`, `less file1.txt`, `head -n 5 file1.txt` shows first 5 lines, `tail -n 5 file1.txt` shows last 5 lines
 
+`cat file1.txt > file2.txt` redirection change standard output from screen to a file, `cat file1.txt file2.txt > file3.txt` concatenate
+
+`echo hello > hello.txt`, `ls -l /etc > files.txt`
+
+`grep -i hello file1.txt` stands for global regular expression print, case-insensitive, search hello in file1.txt
+
+`grep -i hello file1*`
+
 
 
 <h2 align="center">January 2022</h2>
