@@ -65,7 +65,15 @@ Note: Differents between Windows and Linux: Windows `dir1\dir2` Linux `dir1/dir2
 
 `grep -i hello file1.txt` stands for global regular expression print, case-insensitive, search hello in file1.txt
 
-`grep -i hello file1*`
+`grep -i hello file1*`, `grep -i -r hello .` or `grep -ir hello .` search in current directory 
+
+`find` without filter shows all file and directories recursively
+
+`find -type d` shows all directories recursively
+
+`find -type f` shows all files recursively
+
+`find -type f -name "f*"` shows all files start with f
 
 
 
