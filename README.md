@@ -79,6 +79,16 @@ Note: Differents between Windows and Linux: Windows `dir1\dir2` Linux `dir1/dir2
 
 `;` after a command in a line of commands, `;\` go to new line after a command, `command1 | command2` send command1 to command2, `command1 && command2` if command1 works then go to command2 else go out, `command1 || command2` command1 or command2 
 
+`printenv` shows environment variables, `printenv PATH` or `echo $PATH`
+
+`export DB_USER=testuser` add key value to current shell environment variable, `printenv DB_USER` or `echo $DB_USER`
+
+`exit`, `docker start -i 2f7` interactive, container ID
+
+`cd ~ ; ls -a ; echo DB_USER=testuser >> .bashrc` append key value to .bashrc, now after restart machine this variable will be alive
+
+`source ~/.bashrc` to reload .bashrc
+
 [Referense](https://codewithmosh.com/p/the-ultimate-docker-course)
 
 <h2 align="center">January 2022</h2>
