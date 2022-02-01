@@ -31,6 +31,16 @@ Note: Differents between Windows and Linux: Windows `dir1\dir2` Linux `dir1/dir2
 
 `!2` runs the command number 2 from history
 
+`apt list` list of all application package in database
+
+`apt update` update the list
+
+`apt install nano` install nano text editor
+
+`apt remove nano` remove nano text editor
+
+`ctrl+l` clear console window
+
 <h2 align="center">January 2022</h2>
 <!-----------------------------------------------------------------------------January----------------------------------------------------------------------------->
 
