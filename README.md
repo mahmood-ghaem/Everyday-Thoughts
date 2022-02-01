@@ -25,6 +25,11 @@ Note: `root@41440f4e1e7f:/#` root is loged in user, 41440f4e1e7f is the name of 
 
 Note: `bash` Bash is the shell, or command language interpreter, for the GNU operating system. The name is an acronym for the **' Bourne-Again SHell '**, a pun on Stephen Bourne, the author of the direct ancestor of the current Unix shell sh , which appeared in the Seventh Edition Bell Labs Research version of Unix.
 
+Note: Differents between Windows and Linux: Windows `dir1\dir2` Linux `dir1/dir2`, Linux is case-sensitive.
+
+`history` shows all command used localy
+
+`!2` runs the command number 2 from history
 
 <h2 align="center">January 2022</h2>
 <!-----------------------------------------------------------------------------January----------------------------------------------------------------------------->
