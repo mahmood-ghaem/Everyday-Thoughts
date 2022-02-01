@@ -77,7 +77,7 @@ Note: Differents between Windows and Linux: Windows `dir1\dir2` Linux `dir1/dir2
 
 `find -type f -name "f*"` shows all files start with f
 
-
+`;` after a command in a line of commands, `;\` go to new line after a command, `command1 | command2` send command1 to command2, `command1 && command2` if command1 works then go to command2 else go out, `command1 || command2` command1 or command2 
 
 <h2 align="center">January 2022</h2>
 <!-----------------------------------------------------------------------------January----------------------------------------------------------------------------->
