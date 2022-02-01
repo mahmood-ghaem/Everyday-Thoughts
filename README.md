@@ -2,6 +2,30 @@
 
 On this page, I will post the topics I deal with and work on them as a developer and administrator of office automation.
 
+<h2 align="center">February 2022</h2>
+<!-----------------------------------------------------------------------------February----------------------------------------------------------------------------->
+
+### 1- Docker Commands
+
+`docker pull ubuntu`
+
+`docker run -it ubuntu` interactive
+
+`docker ps` process
+
+`docker ps -a` all process include stoped
+
+Note: `root@41440f4e1e7f:/#` root is loged in user, 41440f4e1e7f is the name of machine that automaticaly generated, `/` represents that where we are in the file system and means root directory highest directory in Linux file system, `#` highest privilages because root user `$` means normal user not root user.
+
+`echo hello` shows hello
+
+`whoami` shows current user
+
+`echo $0` shows the location of the shell program.
+
+Note: `bash` Bash is the shell, or command language interpreter, for the GNU operating system. The name is an acronym for the **' Bourne-Again SHell '**, a pun on Stephen Bourne, the author of the direct ancestor of the current Unix shell sh , which appeared in the Seventh Edition Bell Labs Research version of Unix.
+
+
 <h2 align="center">January 2022</h2>
 <!-----------------------------------------------------------------------------January----------------------------------------------------------------------------->
 
