@@ -41,6 +41,22 @@ Note: Differents between Windows and Linux: Windows `dir1\dir2` Linux `dir1/dir2
 
 `ctrl+l` clear console window
 
+`pwd` prints working directory
+
+`ls` list of all files and directories in current location
+
+`ls -1` list each item in one line
+
+`ls -l` long list
+
+`cd ~` do to home directory
+
+`mkdir`, `mv dir1 dir2` change the name, `touch hello.txt`, `touch file1.txt file2.txt file3.txt`, `rm hello.txt`, `rm file1.txt file2.txt file3.txt`, `rm file*`, `rm -r dir/` delete all files and folder inside dir (recursive).
+
+`ctrl+w` delete a word
+
+
+
 <h2 align="center">January 2022</h2>
 <!-----------------------------------------------------------------------------January----------------------------------------------------------------------------->
 
