@@ -9,113 +9,7 @@ On this page, I will post the topics I deal with and work on them as a developer
 
 #### Learn Linux commands usefull in Docker
 
-`docker pull ubuntu`
-
-`docker run -it ubuntu` interactive
-
-`docker ps` process
-
-`docker ps -a` all process include stoped
-
-Note: `root@41440f4e1e7f:/#` root is loged in user, 41440f4e1e7f is the name of machine that automaticaly generated, `/` represents that where we are in the file system and means root directory highest directory in Linux file system, `#` highest privilages because root user `$` means normal user not root user.
-
-`echo hello` shows hello
-
-`whoami` shows current user
-
-`echo $0` shows the location of the shell program.
-
-Note: `bash` Bash is the shell, or command language interpreter, for the GNU operating system. The name is an acronym for the **' Bourne-Again SHell '**, a pun on Stephen Bourne, the author of the direct ancestor of the current Unix shell sh , which appeared in the Seventh Edition Bell Labs Research version of Unix.
-
-Note: Differents between Windows and Linux: Windows `dir1\dir2` Linux `dir1/dir2`, Linux is case-sensitive.
-
-`history` shows all command used localy
-
-`!2` runs the command number 2 from history
-
-`apt list` list of all application package in database
-
-`apt update` update the list
-
-`apt install nano` install nano text editor
-
-`apt remove nano` remove nano text editor
-
-`ctrl+l` clear console window
-
-`pwd` prints working directory
-
-`ls` list of all files and directories in current location
-
-`ls -1` list each item in one line
-
-`ls -l` long list
-
-`cd ~` do to home directory
-
-`mkdir`, `mv dir1 dir2` change the name, `touch hello.txt`, `touch file1.txt file2.txt file3.txt`, `rm hello.txt`, `rm file1.txt file2.txt file3.txt`, `rm file*`, `rm -r dir/` delete all files and folder inside dir (recursive).
-
-`ctrl+w` delete a word
-
-`nano file1.txt`
-
-`cat file1.txt`, `more file1.txt`, `less file1.txt`, `head -n 5 file1.txt` shows first 5 lines, `tail -n 5 file1.txt` shows last 5 lines
-
-`cat file1.txt > file2.txt` redirection change standard output from screen to a file, `cat file1.txt file2.txt > file3.txt` concatenate
-
-`echo hello > hello.txt`, `ls -l /etc > files.txt`
-
-`grep -i hello file1.txt` stands for global regular expression print, case-insensitive, search hello in file1.txt
-
-`grep -i hello file1*`, `grep -i -r hello .` or `grep -ir hello .` search in current directory 
-
-`find` without filter shows all file and directories recursively
-
-`find -type d` shows all directories recursively
-
-`find -type f` shows all files recursively
-
-`find -type f -name "f*"` shows all files start with f
-
-`;` after a command in a line of commands, `;\` go to new line after a command, `command1 | command2` send command1 to command2, `command1 && command2` if command1 works then go to command2 else go out, `command1 || command2` command1 or command2 
-
-`printenv` shows environment variables, `printenv PATH` or `echo $PATH`
-
-`export DB_USER=testuser` add key value to current shell environment variable, `printenv DB_USER` or `echo $DB_USER`
-
-`exit`, `docker start -i 2f7` interactive, container ID
-
-`cd ~ ; ls -a ; echo DB_USER=testuser >> .bashrc` append key value to .bashrc, now after restart machine this variable will be alive
-
-`source ~/.bashrc` to reload .bashrc
-
-`ps` shows all running process
-
-`sleep 100 &` start a process in background
-
-`kill 38` stop process number 38
-
-`useradd -m john` create john user with home directory, `cat /etc/passwd` shows created user `john:x:1000:1000::/home/john:/bin/sh`
-
-`adduser bob` create bob user with more interactive steps
-
-`usermod -s /bin/bash john` modify john's starting shell from `sh` to `bash`
-
-`cat /etc/shadow` shows users' passwords in an encrypted format, only accessible for the root user.
-
-`docker exec -it -u john 6af bash` login with john
-
-`groupadd developers` create developers group, `cat /etc/group`
-
-`usermod -G developers john` adding john to developers group and developers for john isn't primary group if use `-g` then developers gonna be as a primary group for john.
-
-`cat /etc/passwd | grep john` or `grep john /etc/passwd` shows only john record with primary group id, `groups john` shows all group for john
-
-`echo echo hello > deploy.sh ; ls -l ; chmod u+x deploy.sh ; ls -l ; ./deploy.sh` create deploy script file and change the execution permission of that.
-
-`chmod o+x deploy.sh` add execution permission to all users, `chmod g+x deploy.sh` add execution permission to group of current user
-
-`userdel john` delete john
+[View Page](./LinuxCommands.md)
 
 [Referense](https://codewithmosh.com/p/the-ultimate-docker-course)
 
@@ -124,40 +18,40 @@ Note: Differents between Windows and Linux: Windows `dir1\dir2` Linux `dir1/dir2
 
 ### 1- Delete a Commit on Github Repository
 
-* git reset --hard 3813803
-* git push --force origin master
+- git reset --hard 3813803
+- git push --force origin master
 
 [Refrence](https://stackoverflow.com/questions/38402396/how-to-delete-commits-from-git-on-github-and-bitbucket)
 
 ### 2- Create and setup DevOps account
 
-* Work with Backlogs
-* Work with Sprints
-* Repos & connect with Visual Studio 2019
-* Pipelines
-* Release code and db to Azure VM
+- Work with Backlogs
+- Work with Sprints
+- Repos & connect with Visual Studio 2019
+- Pipelines
+- Release code and db to Azure VM
 
 ### 3- Microsoft Azure
 
-* Start free subscription
-* Create Virtual Machine as IIS server
-* Create Virtual Machine as SQL server
-* Connect servers in one resource group
-* Create SQL Database
-* Create Web Application
-* Publish with Visual Studio 2019 to Azure IIS VM or WebApp
+- Start free subscription
+- Create Virtual Machine as IIS server
+- Create Virtual Machine as SQL server
+- Connect servers in one resource group
+- Create SQL Database
+- Create Web Application
+- Publish with Visual Studio 2019 to Azure IIS VM or WebApp
 
 ### 4- IdentityServer 4
 
-* [Oficial page](https://identityserver4.readthedocs.io/en/latest)
-* [Usefull page](https://www.dntips.ir/post/2903/%D8%A7%D9%85%D9%86-%D8%B3%D8%A7%D8%B2%DB%8C-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C-asp-net-core-%D8%AA%D9%88%D8%B3%D8%B7-identityserver-4x-%D9%82%D8%B3%D9%85%D8%AA-%D8%A7%D9%88%D9%84-%D9%86%DB%8C%D8%A7%D8%B2-%D8%A8%D9%87-%D8%AA%D8%A7%D9%85%DB%8C%D9%86-%DA%A9%D9%86%D9%86%D8%AF%D9%87%E2%80%8C%DB%8C-%D9%87%D9%88%DB%8C%D8%AA-%D9%85%D8%B1%DA%A9%D8%B2%DB%8C)
+- [Oficial page](https://identityserver4.readthedocs.io/en/latest)
+- [Usefull page](https://www.dntips.ir/post/2903/%D8%A7%D9%85%D9%86-%D8%B3%D8%A7%D8%B2%DB%8C-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%87%D8%A7%DB%8C-asp-net-core-%D8%AA%D9%88%D8%B3%D8%B7-identityserver-4x-%D9%82%D8%B3%D9%85%D8%AA-%D8%A7%D9%88%D9%84-%D9%86%DB%8C%D8%A7%D8%B2-%D8%A8%D9%87-%D8%AA%D8%A7%D9%85%DB%8C%D9%86-%DA%A9%D9%86%D9%86%D8%AF%D9%87%E2%80%8C%DB%8C-%D9%87%D9%88%DB%8C%D8%AA-%D9%85%D8%B1%DA%A9%D8%B2%DB%8C)
 
-1. ##### Udemy Course 
+1. ##### Udemy Course
 
    - [Secure .Net Microservices with IdentityServer4 OAuth2,OpenID](https://www.udemy.com/course/secure-net-microservices-with-identityserver4-oauth2openid)
    - [Source repo](https://github.com/aspnetrun/run-aspnet-identityserver4)
 
-2. #####  IdentityServer4 .NET Core 3.1
+2. ##### IdentityServer4 .NET Core 3.1
 
    - [Quickstart](https://deblokt.com/2020/01/24/01-identityserver4-quickstart-net-core-3-1)
    - [EntityFramework](https://deblokt.com/2020/01/24/02-identityserver4-entityframework-net-core-3-1)
@@ -177,8 +71,8 @@ Note: Differents between Windows and Linux: Windows `dir1\dir2` Linux `dir1/dir2
 
 ### 8- Permission-Based Authorization in ASP.NET Core 5
 
-* [Reference](https://codewithmukesh.com/blog/permission-based-authorization-in-aspnet-core)
-* [Reference](https://benfoster.io/blog/customize-authorization-response-aspnet-core)
+- [Reference](https://codewithmukesh.com/blog/permission-based-authorization-in-aspnet-core)
+- [Reference](https://benfoster.io/blog/customize-authorization-response-aspnet-core)
 
 ### 9- Script to change table ownership in MS SQL - from admin_demo to dbo
 
@@ -251,7 +145,7 @@ namespace PlatformService.Data
                     Console.WriteLine($"--> Could not run migrations: {ex.Message}");
                 }
             }
-            
+
             if(!context.Platforms.Any())
             {
                 Console.WriteLine("--> Seeding Data...");
@@ -295,7 +189,7 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 
 PlatformService.csproj:
 
-* Add AutoMapper package
+- Add AutoMapper package
 
 ```c#
 <Project Sdk="Microsoft.NET.Sdk.Web">
@@ -344,13 +238,13 @@ PlatformReadDto.cs:
 namespace PlatformService.Dtos
 {
     public class PlatformReadDto
-    {        
+    {
         public int Id { get; set; }
 
         public string Name { get; set; }
-   
+
         public string Publisher { get; set; }
-        
+
         public string Cost { get; set; }
     }
 }
@@ -364,10 +258,10 @@ public void ConfigureServices(IServiceCollection services)
     .
     .
     .
-    
+
     services.AddControllers();
     services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-    
+
     .
     .
     .
@@ -401,11 +295,9 @@ In Controller:
 var platformReadDto = _mapper.Map<PlatformReadDto>(platformModel);
 ```
 
-* [Reference](https://youtu.be/DgVjEo3OGBI?t=5807)
-* [The case for two-way mapping in AutoMapper](https://lostechies.com/jimmybogard/2009/09/18/the-case-for-two-way-mapping-in-automapper)
-* [Mapping domain model to view model via AutoMapper or not](https://stackoverflow.com/questions/16527921/mapping-domain-model-to-view-model-via-automapper-or-not)
-
-
+- [Reference](https://youtu.be/DgVjEo3OGBI?t=5807)
+- [The case for two-way mapping in AutoMapper](https://lostechies.com/jimmybogard/2009/09/18/the-case-for-two-way-mapping-in-automapper)
+- [Mapping domain model to view model via AutoMapper or not](https://stackoverflow.com/questions/16527921/mapping-domain-model-to-view-model-via-automapper-or-not)
 
 <h2 align="center">December 2021</h2>
 <!-----------------------------------------------------------------------------December----------------------------------------------------------------------------->
@@ -418,10 +310,10 @@ var platformReadDto = _mapper.Map<PlatformReadDto>(platformModel);
 
 ### 2- Use the Microsoft Graph API
 
-* Authentication and Authorization
-* Get a token
-* Use the access token to call Microsoft Graph
-* Use the refresh token
+- Authentication and Authorization
+- Get a token
+- Use the access token to call Microsoft Graph
+- Use the refresh token
 
 ### 3- Entity Framework Core zero-or-one to zero-or-one relation
 
@@ -438,31 +330,33 @@ var platformReadDto = _mapper.Map<PlatformReadDto>(platformModel);
 <h2 align="center">November 2021</h2>
 <!-----------------------------------------------------------------------------November----------------------------------------------------------------------------->
 
-### 1- ASP .Net Core UserIdentity 
+### 1- ASP .Net Core UserIdentity
 
-#### Subject: 
+#### Subject:
 
 Get all users in a role with other navigation property related to each user.
 
 #### Solution:
 
 ```C#
-//The first step: get all user id collection as userids based on role from (*1) _context.UserRoles 
+//The first step: get all user id collection as userids based on role from (*1) _context.UserRoles
 var userIds = _context.UserRoles.Where(w => w.RoleId == "ID of role").Select(b => b.UserId).Distinct().ToList();
 
-//The second step : find all users collection from _context.Users  which 's Id is contained at userIds 
+//The second step : find all users collection from _context.Users  which 's Id is contained at userIds
 // also use Include and ThenInclude to fill navigation properties
 var users = _context.Users.Include(i => i.(*2)).ThenInclude(j => j.(*3)).Include(b => b.(*4))
                           .Where(w => userIds.Any(c => c == w.Id)).ToList();
 
 // (*1) private readonly ApplicationDbContext _context;
-// (*2), (*3), (*4) each navigation property you want to fill in. 
+// (*2), (*3), (*4) each navigation property you want to fill in.
 ```
+
 [Refrence](https://forums.asp.net/t/2129247.aspx?Get+all+users+with+a+specific+role+in+ASP+NET+Core+2+0)
 
 ### 2- Send email by WPF
 
 ### 3- Select records count from multiple tables in a single query
+
 ```C#
  public IEnumerable<ApplicationUserActivitiesVM> GetUserActivities(string userId)
         {
@@ -493,7 +387,7 @@ var users = _context.Users.Include(i => i.(*2)).ThenInclude(j => j.(*3)).Include
 
 [How to Clean Clogged Printhead Nozzles for Epson Printers](https://www.youtube.com/watch?v=ep77Wj_Vq6k)
 
-[Clean sensor cartridge](https://www.youtube.com/watch?v=3HeBhiIQFUg&t=289s) 
+[Clean sensor cartridge](https://www.youtube.com/watch?v=3HeBhiIQFUg&t=289s)
 
 Be careful not to get the sensors of cartridge, wet when cleaning nozzeles.
 
@@ -519,7 +413,6 @@ var blogs = context.Blogs
         .ThenInclude(post => post.Author)
     .ToList();
 ```
-
 
 <h2 align="center">September 2021</h2>
 <!-----------------------------------------------------------------------------September----------------------------------------------------------------------------->
@@ -556,30 +449,36 @@ I did a lot of Google to be able to find out if the page is valid or not in jQue
 The file `jquery.validate.unobtrusive.js` runs after the functions written on the page so when I checked on the page with JavaScript whether the form is valid or not, the answer was always true. So I decided to add some lines to the `jquery.validate.unobtrusive.js` file.
 
 ```javascript
-    function onErrors(event, validator) {  // 'this' is the form element
-        var container = $(this).find("[data-valmsg-summary=true]"),
-            list = container.find("ul");
-        
-        if (list && list.length && validator.errorList.length) {
-            list.empty();
-            container.addClass("validation-summary-errors").removeClass("validation-summary-valid");
+function onErrors(event, validator) {
+  // 'this' is the form element
+  var container = $(this).find('[data-valmsg-summary=true]'),
+    list = container.find('ul');
 
-            $.each(validator.errorList, function () {
-                $("<li />").html(this.message).appendTo(list);
-            });
-        }
-        // This is my code added, and If an error occurs, it will hide the loading.
-        if ($("#AjaxLoader").length) {
-            $("#AjaxLoader").hide();
-        };
-    }
+  if (list && list.length && validator.errorList.length) {
+    list.empty();
+    container
+      .addClass('validation-summary-errors')
+      .removeClass('validation-summary-valid');
+
+    $.each(validator.errorList, function () {
+      $('<li />').html(this.message).appendTo(list);
+    });
+  }
+  // This is my code added, and If an error occurs, it will hide the loading.
+  if ($('#AjaxLoader').length) {
+    $('#AjaxLoader').hide();
+  }
+}
 ```
+
 I know this may not be the best way, but it solved my problem.😉
 
 ### 3- Working on Job Board CRM
+
 [Link](https://de-medewerker.nl/Common/Home/ZoekWerk)
 
 ### 4- Transfer hosting and database of a WordPress web site
+
 [Link](https://www.tigroep.nl)
 
 ### 5- Working with Gravity Form in WordPress
@@ -604,12 +503,15 @@ In the domain registrar, you only need to define NS hosting, and in DNS hosting,
 ### 1- Work on the graduation project of HackyourFuture.net
 
 ### 2- Deploy MERN web application to Heroku
-- Increase heap memory from Heroku hosting for JavaScript 
+
+- Increase heap memory from Heroku hosting for JavaScript
 
 ### 3- Change user subscription in office 365 administration
+
 - point: When you buy new subscription in Office 365 administrator panel and asign it to a user just wait 30 minuts to activate user outlook and all the things, instead do a lot and even call Microsoft support like me 😅.
 
 ### 4- ASP .NET Core Unit Of Work Repository Pattern:
+
 I use this pattern in all .NET projects, it is very efficient and optimal.
 Using the code page, you can create the following files and implement your project with this pattern.
 I gave an example for an entity(BlogCategory) and you can create other entities in the same way.
@@ -633,16 +535,18 @@ Good Luck 👍
 - Controllers/BlogCategoryController.cs
 
 ### 5- Working on QadrIT.nl web site
-[Link](https://www.qadrit.nl)
 
+[Link](https://www.qadrit.nl)
 
 <h2 align="center">July 2021</h2>
 <!------------------------------------------------------------------------------July------------------------------------------------------------------------------>
 
 ### 1- Research about Microsoft Dynamic ATS (Applicant Tracking System)
+
 - [How to manage open jobs in Dynamics 365](https://www.youtube.com/watch?v=K988bQ1WcRM)
 
 ### 2- WP ERP Pro
+
 - [Installing WP ERP Pro on a WordPress web site](https://wperp.com/)
 - [HR Frontend](https://wperp.com/14369/introducing-all-new-wordpress-hr-frontend/)
 - [First using ERP Software](https://wperp.com/87054/how-to-use-erp-software-in-your-business/)
@@ -650,41 +554,49 @@ Good Luck 👍
 - [Recruitment](https://wperp.com/docs/hrm-add-ons/recruitment/)
 
 ### 3- Work on WordPress Administration
+
 - [Recover a WordPress web site (deactivate all plugins)](https://wordpress.org/support/article/faq-troubleshooting/)
 - [Research about WordPress Database and Tables](https://wp-staging.com/docs/the-wordpress-database-structure/)
 
 ### 4- Email marketing with weMail WordPress plugin
+
 - Instalation and configuration
 - Administration
 - Create Campaigns to send email to users
 - Create template email
 
 ### 5- SharePoint
+
 - Administration
 - Create and manage web pages
 
 ### 6- Styling React.js with WebPack for HYF graduation project
 
 ### 7- ASP.NET Core fetch data from an API
+
 - [Deserialize json to IEnumerable](https://stackoverflow.com/questions/51359062/deserialize-json-to-ienumerable-in-c-sharp-asp-net-core)
 - [Getting data from WP-ERP API](https://wperp.com/docs/hrm-add-ons/recruitment/#global-api)
 
 ### 8- Custome theme for WordPress
+
 - [Learning document in Persian language](https://hamyarwp.com/wordpress-theme-development/?__cf_chl_jschl_tk__=cb3061d41af81f2d0688aef7ea0ca6f1e8f9008f-1626256148-0-AfzmH54fzWDrq3exN16hVZwA6yqDzkrV0QBv9nkzhiZeX7KWksBT_e_ijAb4apvzkwCs8NquQDmSr3ItFY6mVdrZpwGvJ1rGt_kE1TB9GTLjhFOklN7GalUAg0bhzswxUaDii2Shs6z_gMrw4YmkZ__8Bw_mQGQSc16_Xu1IBZvGSfpTOuunktCdwRyCrOd5N6MpscMUfvNZCluls_EPchx6SNULoUffNjpNkfedI8xoNSZfjIZ2cAUZPMgY4eRd678V3Hxcxyoih8y34YXp5nueZdgztbw4pAYDyVAYxJ2pZpWkEqfRgnBxQGvU1qp4dY0OtPYQOoR1gGqUQGSBQFNfCUXlp653Yglkp_P6wbFAyAsvVn3-SPkfXwMb9DTkAm2DMsfnpa85GWH4tiNPAYxWBi1yAE7u2ZgISDXqTZow8ccBbMqZp0r9qYD_6AmdPKkjUh_MUEg9mJP72z3d4l41M6KTSUrbVKLdbC25p0FekHCWAypwXiJ_oMf7Zh0E0A)
 
 ### 9- Create search result page for HYF graduation project
 
 ### 10- Adyen checkout payment
+
 - [Optimize your checkout](https://www.adyen.com/knowledge-hub/guides/payments-training-guide/optimize-your-checkout)
 - [Adyen online payment integration demos](https://github.com/adyen-examples/adyen-node-online-payments)
 - [Drop-in tutorial: Node.js + Express](https://www.youtube.com/watch?v=C2hdSa3QJIk)
 - [Adyen Docs](https://docs.adyen.com/development-resources/api-credentials#generate-your-api-key)
 
 ### 11- WordPress Plugin
+
 - [Basic example of wordpress plugin to CRUD](https://github.com/eduardoarandah/wordpress-crud-example)
 - [Learn how to create WordPress Plug-in](https://darkoobweb.com/wordpress-plugin-learning/)
 
 ### 12- Pass props to another component onclick of a button in React.js
+
 ```javascript
 import React from 'react';
 import { useHistory } from 'react-router-dom';
@@ -705,31 +617,31 @@ export default Component;
 ```
 
 ### 13- Transfer WordPress site to another hosting
+
 - [Move your WordPress site to another domain](https://help.one.com/hc/en-us/articles/115005585969-Move-your-WordPress-site-to-another-domain#step-6)
 - [Changing The WordPress URL](https://wordpress.org/support/article/changing-the-site-url/)
 
 ### 14- How to get JSON from API in JavaScript?
+
 - [Reference](https://stackoverflow.com/questions/12460378/how-to-get-json-from-url-in-javascript)
 
 ```javascript
-var getJSON = function(url, callback) {
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', url, true);
-    xhr.responseType = 'json';
-    xhr.onload = function() {
-      var status = xhr.status;
-      if (status === 200) {
-        callback(null, xhr.response);
-      } else {
-        callback(status, xhr.response);
-      }
-    };
-    xhr.send();
+var getJSON = function (url, callback) {
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', url, true);
+  xhr.responseType = 'json';
+  xhr.onload = function () {
+    var status = xhr.status;
+    if (status === 200) {
+      callback(null, xhr.response);
+    } else {
+      callback(status, xhr.response);
+    }
+  };
+  xhr.send();
 };
 
-
-getJSON('your API link',
-function(err, data) {
+getJSON('your API link', function (err, data) {
   if (err !== null) {
     alert('Something went wrong: ' + err);
   } else {
@@ -737,7 +649,9 @@ function(err, data) {
   }
 });
 ```
+
 Another way:
+
 ```javascript
 const firstFunc = async () => {
   const response = await fetch(apiUrl);
@@ -745,11 +659,14 @@ const firstFunc = async () => {
   return myJson;
 };
 
-firstFunc().then((data) => { // data will be set by myJson
-   secondFunc(data);
+firstFunc().then((data) => {
+  // data will be set by myJson
+  secondFunc(data);
 });
 ```
+
 ### 15- OpenStreetMap
+
 - [Creating A Map With Markers](https://mediarealm.com.au/articles/openstreetmap-openlayers-map-markers)
 - [Nominatim Wiki](https://wiki.openstreetmap.org/wiki/Nominatim#API)
 - [Nominatim Doc](http://nominatim.org/release-docs/latest/)
@@ -772,22 +689,29 @@ firstFunc().then((data) => { // data will be set by myJson
 ### 6- Change DNS recodrs for a domain to resolve it to another hosting
 
 ### 7- Calculate an area on Google Map in a web page
+
 - [Like IKEA Page](https://sveasolar.com/nl/ikea)
 
-### 8- Design web site for Bazaar 
+### 8- Design web site for Bazaar
+
 This is final HYF project.
+
 - [Demo](https://mahmood-ghaem.github.io/Bazar-HYF-Project/index.html)
 - [Source](https://github.com/mahmood-ghaem/Bazar-HYF-Project)
 
 ### 9- How to debug IIS hosted asp.net web application in visual studio?
+
 There are a lot of contents in internet for this question but I went ahead with this article and it worked well, contrary to Microsoft's confusing tutorials 😉
+
 - <a href="./Data/How to debug IIS hosted asp.net web application in visual studio.pdf" target="_blank">Article</a>
 
 ### 10- 5 hours debuging just for one mistake 🤦‍♂️
+
 - My new web application doesn't have web.config so in deployment(upload to hosting) startup.cs couldn't access appsettings.Development.json file and my project couldn't send confirmation email after user registration.
 - To create web.config automatically --> right click on project in sulotion explorer --> click properties --> in build tab just make some changes to web.config will be create (I don't know what exactly I did.)
 
 ### 11- Learn to work with [Figma](https://www.figma.com)
+
 - I prefered Adobe XD
 
 <h2 align="center">May 2021</h2>
@@ -812,19 +736,23 @@ There is a very good tutorial here:
 - https://github.com/CodAffection/React-js-Master-Detail-CRUD-with-Asp.Net-Web-API
 
 ### 4- Create GitHub API React.js
- - [Demo](https://github-react-project.herokuapp.com)
- - [Source](https://github.com/mahmood-ghaem/GitHub-React)
+
+- [Demo](https://github-react-project.herokuapp.com)
+- [Source](https://github.com/mahmood-ghaem/GitHub-React)
 
 ### 5- ASP.NET Core Logger
 
 Get log from all activity of each user and save in database with IP address
 
 ### 6- UBL(Universal Business Language) in ASP.NET Core
+
 - https://github.com/UblSharp/UblSharp
 - https://en.wikipedia.org/wiki/Universal_Business_Language
 
 ### 7- HYF Node.js Test
+
 An exam about Node.js module
+
 - [Repository](https://github.com/mahmood-ghaem/HYF-Node.js-Test)
 
 ### 8- Managing GitHub Company Page
@@ -833,27 +761,32 @@ An exam about Node.js module
 <!------------------------------------------------------------------------------April------------------------------------------------------------------------------>
 
 ### 1- JavaScript Quiz
+
 A project created with JavaScript
+
 - [Demo](https://mahmood-ghaem.github.io/browser-quiz/index.html)
 - [Source](https://github.com/mahmood-ghaem/browser-quiz)
 
+### 2- Predict Nationality
 
-### 2- Predict Nationality 
 A project created with JavaScript
+
 - [Demo](https://mahmood-ghaem.github.io/API-JavaScript-Project/index.html)
 - [Source](https://github.com/mahmood-ghaem/API-JavaScript-Project)
 
-
 ### 3- Node.js-Express CrashCourse
+
 - [Demo](https://splashy-candy-skirt.glitch.me)
 - [Source](https://github.com/mahmood-ghaem/Node.js-Express-CrashCourse)
 - [Reference](https://www.youtube.com/watch?v=L72fhGm1tfE)
 
 ### 4- Node.js Express API
+
 - [Source](https://github.com/mahmood-ghaem/Node.js_Express_API)
 - [Reference](https://www.youtube.com/watch?v=l8WPWK9mS5M)
 
 ### 5- Node.js Blog
+
 - [Demo](https://hyf-blog.herokuapp.com)
 - [Source](https://github.com/mahmood-ghaem/hyf-blog)
 - [Reference](https://github.com/v1t03r/E_Commerce-MongoDB-Node.js)
@@ -862,24 +795,27 @@ A project created with JavaScript
 <!------------------------------------------------------------------------------March------------------------------------------------------------------------------>
 
 ### 1- HTML-CSS Tips & Tricks
-- [Repository](https://github.com/mahmood-ghaem/HTML-CSS-TipsAndTricks)
 
+- [Repository](https://github.com/mahmood-ghaem/HTML-CSS-TipsAndTricks)
 
 <h2 align="center">February 2021</h2>
 <!------------------------------------------------------------------------------February------------------------------------------------------------------------------>
 
 ### 1- JavaScrip CodePieces
+
 I put everything I have learned about JavaScript in this repository.
+
 - [Repository](https://github.com/mahmood-ghaem/JavaScrip-CodePieces)
 
 ### 2- using-apis-test-got
+
 An exam about using API module
+
 - [Repository](https://github.com/mahmood-ghaem/using-apis-test-got)
 
 <h2 align="center">January 2021</h2>
 <!------------------------------------------------------------------------------January------------------------------------------------------------------------------>
 
 ### 1- HTML-CSS Homework of HackYourFuture
+
 - [All 3 weeks](https://mahmood-ghaem.github.io/HYF-Module-HTMLCSSGIT)
-
-
