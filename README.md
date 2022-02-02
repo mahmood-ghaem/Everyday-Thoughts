@@ -89,6 +89,20 @@ Note: Differents between Windows and Linux: Windows `dir1\dir2` Linux `dir1/dir2
 
 `source ~/.bashrc` to reload .bashrc
 
+`ps` shows all running process
+
+`sleep 100 &` start a process in background
+
+`kill 38` stop process number 38
+
+`useradd -m john` create john user with home directory, `cat /etc/passwd` shows created user `john:x:1000:1000::/home/john:/bin/sh`
+
+`usermod -s /bin/bash john` modify john's starting shell from `sh` to `bash`
+
+`cat /etc/shadow` shows users' passwords in an encrypted format, only accessible for the root user.
+
+`docker exec -it -u john 6af bash` login with john
+
 [Referense](https://codewithmosh.com/p/the-ultimate-docker-course)
 
 <h2 align="center">January 2022</h2>
