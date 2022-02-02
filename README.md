@@ -111,7 +111,9 @@ Note: Differents between Windows and Linux: Windows `dir1\dir2` Linux `dir1/dir2
 
 `cat /etc/passwd | grep john` or `grep john /etc/passwd` shows only john record with primary group id, `groups john` shows all group for john
 
+`echo echo hello > deploy.sh ; ls -l ; chmod u+x deploy.sh ; ls -l ; ./deploy.sh` create deploy script file and change the execution permission of that.
 
+`chmod o+x deploy.sh` add execution permission to all users, `chmod g+x deploy.sh` add execution permission to group of current user
 
 `userdel john` delete john
 
