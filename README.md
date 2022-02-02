@@ -7,11 +7,7 @@ On this page, I will post the topics I deal with and work on them as a developer
 
 ### 1- Docker
 
-#### Learn Linux commands usefull in Docker
-
-[View Page](./LinuxCommands.md)
-
-[Referense](https://codewithmosh.com/p/the-ultimate-docker-course)
+- #### Learn Linux commands usefull in Docker [View Page](./LinuxCommands.md)
 
 <h2 align="center">January 2022</h2>
 <!-----------------------------------------------------------------------------January----------------------------------------------------------------------------->
