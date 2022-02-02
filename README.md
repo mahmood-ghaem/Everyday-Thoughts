@@ -97,11 +97,23 @@ Note: Differents between Windows and Linux: Windows `dir1\dir2` Linux `dir1/dir2
 
 `useradd -m john` create john user with home directory, `cat /etc/passwd` shows created user `john:x:1000:1000::/home/john:/bin/sh`
 
+`adduser bob` create bob user with more interactive steps
+
 `usermod -s /bin/bash john` modify john's starting shell from `sh` to `bash`
 
 `cat /etc/shadow` shows users' passwords in an encrypted format, only accessible for the root user.
 
 `docker exec -it -u john 6af bash` login with john
+
+`groupadd developers` create developers group, `cat /etc/group`
+
+`usermod -G developers john` adding john to developers group and developers for john isn't primary group if use `-g` then developers gonna be as a primary group for john.
+
+`cat /etc/passwd | grep john` or `grep john /etc/passwd` shows only john record with primary group id, `groups john` shows all group for john
+
+
+
+`userdel john` delete john
 
 [Referense](https://codewithmosh.com/p/the-ultimate-docker-course)
 
