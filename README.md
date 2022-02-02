@@ -80,106 +80,7 @@ EXEC sp_changeobjectowner '[admin_demo].[AspNetUsers]', dbo
 
 ### 11- ASP.NET Core seed data
 
-Platform.cs:
-
-```c#
-using System.ComponentModel.DataAnnotations;
-
-namespace PlatformService.Models
-{
-    public class Platform
-    {
-        [Key]
-        [Required]
-        public int Id { get; set; }
-
-        [Required]
-        public string Name { get; set; }
-
-        [Required]
-        public string Publisher { get; set; }
-
-        [Required]
-        public string Cost { get; set; }
-    }
-}
-```
-
-PrepDb.cs:
-
-```c#
-using System;
-using System.Linq;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using PlatformService.Models;
-
-namespace PlatformService.Data
-{
-    public static class PrepDb
-    {
-        public static void PrepPopulation(IApplicationBuilder app, bool isProd)
-        {
-            using( var serviceScope = app.ApplicationServices.CreateScope())
-            {
-                SeedData(serviceScope.ServiceProvider.GetService<AppDbContext>(), isProd);
-            }
-        }
-
-        private static void SeedData(AppDbContext context, bool isProd)
-        {
-            if(isProd)
-            {
-                Console.WriteLine("--> Attempting to apply migrations...");
-                try
-                {
-                    context.Database.Migrate();
-                }
-                catch(Exception ex)
-                {
-                    Console.WriteLine($"--> Could not run migrations: {ex.Message}");
-                }
-            }
-
-            if(!context.Platforms.Any())
-            {
-                Console.WriteLine("--> Seeding Data...");
-
-                context.Platforms.AddRange(
-                    new Platform() {Name="Dot Net", Publisher="Microsoft", Cost="Free"},
-                    new Platform() {Name="SQL Server Express", Publisher="Microsoft",  Cost="Free"},
-                    new Platform() {Name="Kubernetes", Publisher="Cloud Native Computing Foundation",  Cost="Free"}
-                );
-
-                context.SaveChanges();
-            }
-            else
-            {
-                Console.WriteLine("--> We already have data");
-            }
-        }
-    }
-}
-```
-
-Startup.cs:
-
-```c#
-public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-{
-    .
-    .
-    .
-    .
-
-
-    PrepDb.PrepPopulation(app, env.IsProduction());
-
-}
-```
-
-[Reference](https://www.youtube.com/watch?v=DgVjEo3OGBI&t=4644s)
+[View Code](./SeedData.NetCore.md)
 
 ### 12- ASP.Net Core DTO and Auto Mapper
 
@@ -328,11 +229,11 @@ var platformReadDto = _mapper.Map<PlatformReadDto>(platformModel);
 
 ### 1- ASP .Net Core UserIdentity
 
-#### Subject:
+#### Subject
 
 Get all users in a role with other navigation property related to each user.
 
-#### Solution:
+#### Solution
 
 ```C#
 //The first step: get all user id collection as userids based on role from (*1) _context.UserRoles
@@ -413,7 +314,7 @@ var blogs = context.Blogs
 <h2 align="center">September 2021</h2>
 <!-----------------------------------------------------------------------------September----------------------------------------------------------------------------->
 
-### 1- An experience about Office 365 administration:
+### 1- An experience about Office 365 administration
 
 We have a web domain that we added in the Office admin panel.
 We have created several users for this domain and all of them use their email to access Outlook.
@@ -479,9 +380,9 @@ I know this may not be the best way, but it solved my problem.😉
 
 ### 5- Working with Gravity Form in WordPress
 
-### 6- Following the problems I had with adding the domain in Office 365, in the last step, I realized that some users of Office 365 have problems sending and receiving to some email addresses and encounter problems.
+### 6- Following the problems I had with adding the domain in Office 365, in the last step, I realized that some users of Office 365 have problems sending and receiving to some email addresses and encounter problems
 
-#### And solutions:
+#### And solutions
 
 After you add the domain to the Office 365 admin panel, you need to change the DNS in the domain hosting (base on Microsoft NS) and then disable the email service in the hosting to prevent conflict.
 
@@ -506,7 +407,7 @@ In the domain registrar, you only need to define NS hosting, and in DNS hosting,
 
 - point: When you buy new subscription in Office 365 administrator panel and asign it to a user just wait 30 minuts to activate user outlook and all the things, instead do a lot and even call Microsoft support like me 😅.
 
-### 4- ASP .NET Core Unit Of Work Repository Pattern:
+### 4- ASP .NET Core Unit Of Work Repository Pattern
 
 I use this pattern in all .NET projects, it is very efficient and optimal.
 Using the code page, you can create the following files and implement your project with this pattern.
@@ -717,9 +618,9 @@ There are a lot of contents in internet for this question but I went ahead with 
 
 I'm trying to learn how to create a multilingual web application?
 
-- https://github.com/onodera-sf/AspNetCoreLocalizationDataAnnotation
-- https://docs.microsoft.com/en-us/graph/tutorials/aspnet-core
-- https://github.com/cnahmetcn/corecrud
+- <https://github.com/onodera-sf/AspNetCoreLocalizationDataAnnotation>
+- <https://docs.microsoft.com/en-us/graph/tutorials/aspnet-core>
+- <https://github.com/cnahmetcn/corecrud>
 
 ### 2- Add event in Outlook calander from ASP.NET app
 
@@ -727,9 +628,9 @@ I'm trying to learn how to create a multilingual web application?
 
 There is a very good tutorial here:
 
-- https://www.youtube.com/watch?v=i8LymADs_U4
-- https://www.youtube.com/watch?v=z5NsNtrl4Og
-- https://github.com/CodAffection/React-js-Master-Detail-CRUD-with-Asp.Net-Web-API
+- <https://www.youtube.com/watch?v=i8LymADs_U4>
+- <https://www.youtube.com/watch?v=z5NsNtrl4Og>
+- <https://github.com/CodAffection/React-js-Master-Detail-CRUD-with-Asp.Net-Web-API>
 
 ### 4- Create GitHub API React.js
 
@@ -742,8 +643,8 @@ Get log from all activity of each user and save in database with IP address
 
 ### 6- UBL(Universal Business Language) in ASP.NET Core
 
-- https://github.com/UblSharp/UblSharp
-- https://en.wikipedia.org/wiki/Universal_Business_Language
+- <https://github.com/UblSharp/UblSharp>
+- <https://en.wikipedia.org/wiki/Universal_Business_Language>
 
 ### 7- HYF Node.js Test
 
