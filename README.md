@@ -9,6 +9,12 @@ On this page, I will post the topics I deal with and work on them as a developer
 
 - #### Learn Linux commands usefull in Docker [View Page](./LinuxCommands.md)
 
+### 2- Google PageSpeed Insights
+
+ - [Get Started with the PageSpeed Insights API](https://developers.google.com/speed/docs/insights/v5/get-started)
+ - [PageSpeed Insights](https://pagespeed.web.dev/)
+ - [Extracting Google PageSpeed performance score in .NET](https://davecallan.com/getting-google-pagespeed-performance-score-dotnet/)
+
 <h2 align="center">January 2022</h2>
 <!-----------------------------------------------------------------------------January----------------------------------------------------------------------------->
 
