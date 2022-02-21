@@ -19,6 +19,18 @@ On this page, I will post the topics I deal with and work on them as a developer
   - [Reference](https://docs.microsoft.com/en-us/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications?view=vs-2019#iis)
   - [Video](https://www.youtube.com/watch?v=NKehTIFvZCA)
 
+### 4- Error 405 – Methods not Allowed in ASP.NET Core PUT and DELETE requests
+
+Add to `web.config`:
+
+```c#
+<system.webServer>
+  <modules runAllManagedModulesForAllRequests="false">
+    <remove name="WebDAVModule" />
+  </modules>
+</system.webServer>
+```
+
 <h2 align="center">January 2022</h2>
 <!-----------------------------------------------------------------------------January----------------------------------------------------------------------------->
 
