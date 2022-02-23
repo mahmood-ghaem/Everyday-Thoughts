@@ -10,7 +10,7 @@
 - Create new catalog `use CatalogDB`
 - Create new collection `db.createCollection('Products')`
 - Insert data into Products collection 
-```
+```js
   db.Products.insertMany(
     [
       {
