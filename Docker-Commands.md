@@ -1,6 +1,6 @@
 # Some useful Docker commands
 
-### Mongo in Docker
+### 1- Mongo in Docker
 
 - Pull Mongo `docker pull mongo`
 - Run `docker run -p 27017:27017 --name name-mongo -d mongo`
