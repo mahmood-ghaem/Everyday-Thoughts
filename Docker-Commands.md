@@ -6,7 +6,7 @@
 - Run `docker run -p 27017:27017 --name name-mongo -d mongo`
 - Interact with Mongo in bash `docker exec -it name-mongo /bin/bash`
 - `mongo`
-- Show all databases or catalogs in Mongo `show dbs`
+- Show all databases or catalogs in Mongo `show dbs` or `show databases`
 - Create new catalog `use CatalogDB`
 - Create new collection `db.createCollection('Products')`
 - Insert data into Products collection 
@@ -40,3 +40,6 @@
     ]
   )
 ```
+- Show inserted data `db.Products.find({}).pretty()`
+- Remove data `db.Products.remove({})`
+- Show all collections `show collections`
