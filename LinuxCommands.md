@@ -1,4 +1,4 @@
-# Learn Linux commands usefull in Docker
+# Learn Linux commands useful in Docker
 
 `docker pull ubuntu`
 
