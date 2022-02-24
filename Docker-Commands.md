@@ -43,3 +43,4 @@
 - Show inserted data `db.Products.find({}).pretty()`
 - Remove data `db.Products.remove({})`
 - Show all collections `show collections`
+- `docker-compose -f .\docker-compose.yml -f .\docker-compose.override.yml up -d`
