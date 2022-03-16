@@ -44,3 +44,5 @@
 - Remove data `db.Products.remove({})`
 - Show all collections `show collections`
 - `docker-compose -f .\docker-compose.yml -f .\docker-compose.override.yml up -d`
+- `docker build -t image-name .`
+- `docker run -it image-name sh`
