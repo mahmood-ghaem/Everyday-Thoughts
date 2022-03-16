@@ -48,3 +48,5 @@
 - `docker run -it image-name sh`
 - `docker images`
 - `docker image prune` Remove all dangling images.
+- `docker ps -a` Show all containers.
+- `docker container prune` Remove all stopped containers.
