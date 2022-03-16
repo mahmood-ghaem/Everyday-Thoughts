@@ -90,6 +90,8 @@ Note: Differents between Windows and Linux: Windows `dir1\dir2` Linux `dir1/dir2
 
 `adduser bob` create bob user with more interactive steps
 
+`addgroup group-name && adduser -S -G user-name group-name && groups group-name`
+
 `usermod -s /bin/bash john` modify john's starting shell from `sh` to `bash`
 
 `cat /etc/shadow` shows users' passwords in an encrypted format, only accessible for the root user.
